@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta name="viewport" content="initial-scale=1.0" /><meta name="supported-color-schemes" content="light dark"></head><style type="text/css">body { -webkit-text-size-adjust: none; font-family: HelveticaNeue; font-size: 11pt;}  mark {background-color: #FFFF00;}</style><body><p>Given a number of different denominations of coins (e.g., 1 cent, 5 cents, 10 cents, 25 cents), get all the possible ways to pay a target number of cents.<br />
+<br/></p>
+<p><strong>Arguments</strong><br />
+coins - an array of positive integers representing the different denominations of coins, there are no duplicate numbers and the numbers are sorted by descending order, eg. {25, 10, 5, 2, 1}<br />
+target - a non-negative integer representing the target number of cents, eg. 99<br />
+<br/></p>
+<p><strong>Assumptions</strong><br />
+coins is not null and is not empty, all the numbers in coins are positive<br />
+target &gt;= 0<br />
+You have infinite number of coins for each of the denominations, you can pick any number of the coins.<br />
+<br/></p>
+<p><strong>Return</strong><br />
+a list of ways of combinations of coins to sum up to be target.<br />
+each way of combinations is represented by list of integer, the number at each index means the number of coins used for the denomination at corresponding index.<br />
+<br/></p>
+<p><strong>Examples</strong><br />
+coins = {2, 1}, target = 4, the return should be<br />
+[<br />
+  [0, 4],   (4 cents can be conducted by 0 * 2 cents + 4 * 1 cents)<br />
+  [1, 2],   (4 cents can be conducted by 1 * 2 cents + 2 * 1 cents)<br />
+  [2, 0]    (4 cents can be conducted by 2 * 2 cents + 0 * 1 cents)<br />
+]</p>
+</body></html>

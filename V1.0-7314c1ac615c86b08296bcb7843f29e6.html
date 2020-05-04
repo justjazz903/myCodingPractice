@@ -1,0 +1,1735 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>7314c1ac615c86b08296bcb7843f29e6</title>
+<script type="text/javascript">
+function showhide(id)
+{
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+}
+</script>
+<style>
+rect {
+transition: .6s fill;
+fill: #D3D3D3;
+opacity: 0;
+}
+rect:hover {
+    fill: #D3D3D3;
+    opacity: 0.2;
+}
+
+.outline {
+    clear: both;
+}
+
+.svg-container {
+    width: 100%;
+    max-width: 1188px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.svg-content {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container"><div class="spacer">&nbsp;</div><div class="svg-container"><svg version="1.1"  preserveAspectRatio="xMinYMin meet" class="svg-content" viewBox="0 0 1188 1456" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<image width="1188" height="1456" xlink:href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/V1.0-7314c1ac615c86b08296bcb7843f29e6.png"></image>
+</svg>
+</div>
+</div>
+
+<br/>
+<a href="javascript:showhide('outlineDiv')">Outline show/hide</a>
+<div id="outlineDiv" style="display:none;">
+<h1>V1.0</h1>
+<h2>Problems</h2>
+<h3>Binary Search (8)</h3>
+<ul>
+<li>
+<p>Classical Binary Search<br />
+Link: <a href="https://docs.google.com/document/d/1v2QDhpxkrOzNtHIEfdZstk3YBqp1Me2CAQa7zmVkEQI/edit">docs.google.com/document/d/1v2QDhpxkrOzNtHIEfdZstk3YBqp1Me2CAQa7zmVkEQI/edit</a></p>
+<p>Given a target integer T and an integer array A sorted in ascending order, find the index i such that A[i] == T or return -1 if there is no such index.</p>
+<p><strong>Assumptions</strong><br />
+There can be duplicate elements in the array, and you can return any of the indices i such that A[i] == T.</p>
+<p><strong>Examples</strong><br />
+A = {1, 2, 3, 4, 5}, T = 3, return 2<br />
+A = {1, 2, 3, 4, 5}, T = 6, return -1<br />
+A = {1, 2, 2, 2, 3, 4}, T = 2, return 1 or 2 or 3</p>
+<p><strong>Corner Cases</strong><br />
+What if A is null or A is of zero length? We should return -1 in this case.</p>
+<ul>
+<li>
+<p>ClassicalBinarySearch.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/952FB206-68C0-428A-AB77-0AAC17524725/ClassicalBinarySearch.java">ClassicalBinarySearch.java</a></p>
+</li>
+<li>
+<p>ClassicalBinarySearch.mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/C602FE30-1D3E-4055-B9A0-E57E1BC046F1/ClassicalBinarySearch.mov">ClassicalBinarySearch.mov</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Search in Sorted Matrix I<br />
+Link: <a href="https://docs.google.com/document/d/1LfLJWW-A8nJNBNbXbI6JpqGS0j5ZdcvLsmzzKGMIixo/edit">docs.google.com/document/d/1LfLJWW-A8nJNBNbXbI6JpqGS0j5ZdcvLsmzzKGMIixo/edit</a></p>
+<p>Given a 2D matrix that contains integers only, which each row is sorted in an ascending order. The first element of next row is larger than (or equal to) the last element of previous row.<br />
+Given a target number, returning the position that the target locates within the matrix. If the target number does not exist in the matrix, return {-1, -1}.</p>
+<p><strong>Assumptions:</strong><br />
+The given matrix is not null, and has size of N * M, where N &gt;= 0 and M &gt;= 0.</p>
+<p><strong>Examples:</strong><br />
+matrix = { {1, 2, 3}, {4, 5, 7}, {8, 9, 10} }<br />
+target = 7, return {1, 2}<br />
+target = 6, return {-1, -1} to represent the target number does not exist in the matrix.</p>
+<ul>
+<li>
+<p>BinarySearchInSortedMatrixI(2DMappingTrick).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/C1E33C9E-A55C-42D8-84F7-50151EF2A30C/BinarySearchInSortedMatrixI(2DMappingTrick).java">BinarySearchInSortedMatrixI(2DMappingTrick).java</a></p>
+</li>
+<li>
+<p>BinarySearchInSortedArrayI(TwoTimeBinarySearches).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/93BD49CE-1A0A-4607-901E-F47548D7E918/BinarySearchInSortedArrayI(TwoTimeBinarySearches).java">BinarySearchInSortedArrayI(TwoTimeBinarySearches).java</a></p>
+</li>
+<li>
+<p>BinarySearchInSortedMatrix(TwoTimeBinarySearches).mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/0D744FEC-B956-4E4E-8291-2CBB135E190F/BinarySearchInSortedMatrix(TwoTimeBinarySearches).mov">BinarySearchInSortedMatrix(TwoTimeBinarySearches).mov</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Closest in Sorted Array<br />
+Link: <a href="https://docs.google.com/document/d/1y9LGhGfDkuml4y-rFgBt0RJnqZgCQwELml3Fa3Jtuss/edit">docs.google.com/document/d/1y9LGhGfDkuml4y-rFgBt0RJnqZgCQwELml3Fa3Jtuss/edit</a></p>
+<p>Given a target integer T and an integer array A sorted in ascending order, find the index i in A such that A[i] is closest to T.</p>
+<p><strong>Assumptions</strong><br />
+There can be duplicate elements in the array, and we can return any of the indices with same value.</p>
+<p><strong>Examples</strong><br />
+A = {1, 2, 3}, T = 2, return 1<br />
+A = {1, 4, 6}, T = 3, return 1<br />
+A = {1, 4, 6}, T = 5, return 1 or 2<br />
+A = {1, 3, 3, 4}, T = 2, return 0 or 1 or 2</p>
+<p><strong>Corner Cases</strong><br />
+What if A is null or A is of zero length? We should return -1 in this case.</p>
+<ul>
+<li>ClosestInSortedArray.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/6AFFEF78-363D-4362-84A6-9A9DD0647058/ClosestInSortedArray.java">ClosestInSortedArray.java</a></li>
+</ul>
+</li>
+<li>
+<p>First Occurrence<br />
+Link: <a href="https://docs.google.com/document/d/1I7g_lGkqKeJa-pznuiiOOW2Fg6e5JTQv1JTY_qDUyfs/edit">docs.google.com/document/d/1I7g_lGkqKeJa-pznuiiOOW2Fg6e5JTQv1JTY_qDUyfs/edit</a></p>
+<p>Given a target integer T and an integer array A sorted in ascending order, find the index of the first occurrence of T in A or return -1 if there is no such index.</p>
+<p><strong>Assumptions</strong><br />
+There can be duplicate elements in the array.</p>
+<p><strong>Examples</strong><br />
+A = {1, 2, 3}, T = 2, return 1<br />
+A = {1, 2, 3}, T = 4, return -1<br />
+A = {1, 2, 2, 2, 3}, T = 2, return 1</p>
+<p><strong>Corner Cases</strong><br />
+What if A is null or A of zero length? We should return -1 in this case.</p>
+<ul>
+<li>FirstOccurence.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/5A7EFB26-B493-44FD-9EB5-4C9E539F7F1E/FirstOccurence.java">FirstOccurence.java</a></li>
+</ul>
+</li>
+<li>
+<p>Last Occurrence<br />
+Link: <a href="https://docs.google.com/document/d/1uXvSnqtcBEuO5EfZeDpMKoY51Rifn-OEQlAcu0ksbM4/edit">docs.google.com/document/d/1uXvSnqtcBEuO5EfZeDpMKoY51Rifn-OEQlAcu0ksbM4/edit</a></p>
+<p>Given a target integer T and an integer array A sorted in ascending order, find the index of the last occurrence of T in A or return -1 if there is no such index.</p>
+<p><strong>Assumptions</strong><br />
+There can be duplicate elements in the array.</p>
+<p><strong>Examples</strong><br />
+A = {1, 2, 3}, T = 2, return 1<br />
+A = {1, 2, 3}, T = 4, return -1<br />
+A = {1, 2, 2, 2, 3}, T = 2, return 3</p>
+<p><strong>Corner Cases</strong><br />
+What if A is null or A is array of zero length? We should return -1 in this case.</p>
+<ul>
+<li>LastOccurrence.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/2017323F-ED71-4CFE-810C-3531A86DB7EF/LastOccurrence.java">LastOccurrence.java</a></li>
+</ul>
+</li>
+<li>
+<p>K Closest in Sorted<br />
+Link: <a href="https://docs.google.com/document/d/1y65IiA6ns_FgMzBzlfCBJFoxPCFz-0wPz7xKaw5cwJs/edit">docs.google.com/document/d/1y65IiA6ns_FgMzBzlfCBJFoxPCFz-0wPz7xKaw5cwJs/edit</a></p>
+<p>Given a target integer T, a non-negative integer K and an integer array A sorted in ascending order, find the K closest numbers to T in A.</p>
+<p><strong>Assumptions</strong><br />
+A is not null<br />
+K is guranteed to be &gt;= 0 and K is guranteed to be &lt;= A.length</p>
+<p><strong>Return</strong><br />
+A size K integer array containing the K closest numbers(not indices) in A, sorted in ascending order by the difference between the number and T. </p>
+<p><strong>Examples</strong><br />
+A = {1, 2, 3}, T = 2, K = 3, return {2, 1, 3} or {2, 3, 1}<br />
+A = {1, 4, 6, 8}, T = 3, K = 3, return {4, 1, 6}</p>
+<ul>
+<li>KColsestInSortedArray.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/27CB90BB-F23B-4697-AF11-E7A34948471B/KColsestInSortedArray.java">KColsestInSortedArray.java</a></li>
+</ul>
+</li>
+<li>
+<p>Smallest Element Larger<br />
+Link: <a href="https://docs.google.com/document/d/1WmfB3Ey7Gb4v03ZkFcp9GlYYAbtFh4De00AlyjAz6I0/edit">docs.google.com/document/d/1WmfB3Ey7Gb4v03ZkFcp9GlYYAbtFh4De00AlyjAz6I0/edit</a></p>
+<p>Given a target integer T and an integer array A sorted in ascending order, find the index of the smallest element in A that is larger than T or return -1 if there is no such index.</p>
+<p><strong>Assumptions</strong><br />
+There can be duplicate elements in the array.</p>
+<p><strong>Examples</strong><br />
+A = {1, 2, 3}, T = 1, return 1<br />
+A = {1, 2, 3}, T = 3, return -1<br />
+A = {1, 2, 2, 2, 3}, T = 1, return 1</p>
+<p><strong>Corner Cases</strong><br />
+What if A is null or A of zero length? We should return -1 in this case.</p>
+<ul>
+<li>SmallestElementLargerThanTarget.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/1D970AFB-5FD4-447F-926E-3DC6CC52BA5F/SmallestElementLargerThanTarget.java">SmallestElementLargerThanTarget.java</a></li>
+</ul>
+</li>
+<li>
+<p>Search in Unknown Sized Sorted Array<br />
+Link: <a href="https://docs.google.com/document/d/1xW_ayNKuVR-RKwh3Cn3MEyj1O8_1l7y_Bdw0O-mh2VY/edit">docs.google.com/document/d/1xW_ayNKuVR-RKwh3Cn3MEyj1O8_1l7y_Bdw0O-mh2VY/edit</a></p>
+<p>Given a integer dictionary A of unknown size, where the numbers in the dictionary are sorted in ascending order, determine if a given target integer T is in the dictionary. Return the index of T in A, return -1 if T is not in A.</p>
+<p><strong>Assumptions</strong><br />
+dictionary A is not null<br />
+dictionary.get(i) will return null(Java)/INT_MIN(C++)/None(Python) if index i is out of bounds</p>
+<p><strong>Examples</strong><br />
+A = {1, 2, 5, 9, ......}, T = 5, return 2<br />
+A = {1, 2, 5, 9, 12, ......}, T = 7, return -1</p>
+<ul>
+<li>BinarySearchInUnknownSizedSortedArray.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/A6987BB1-0631-4C28-9A0A-59769B48826E/BinarySearchInUnknownSizedSortedArray.java">BinarySearchInUnknownSizedSortedArray.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Recursion I and Sorting (7)</h3>
+<ul>
+<li>
+<p>Fibonacci number Lite<br />
+Link: <a href="https://docs.google.com/document/d/1UKIi0zXGjvXBPSAylinzxsSFB6MFqRgDuo5jF6t2eZs/edit">docs.google.com/document/d/1UKIi0zXGjvXBPSAylinzxsSFB6MFqRgDuo5jF6t2eZs/edit</a></p>
+<p>Get the Kth number in the Fibonacci Sequence. (K is 0-indexed, the 0th Fibonacci number is 0 and the 1st Fibonacci number is 1).</p>
+<p><strong>Examples</strong><br />
+0th fibonacci number is 0<br />
+1st fibonacci number is 1<br />
+2nd fibonacci number is 1<br />
+3rd fibonacci number is 2<br />
+6th fibonacci number is 8</p>
+<p><strong>Corner Cases</strong><br />
+What if K &lt; 0? in this case, we should always return 0.<br />
+Is it possible the result fibonacci number is overflowed? We can assume it will not be overflowed when we solve this problem on this online judge, but we should also know that it is possible to get an overflowed number, and sometimes we will need to use something like BigInteger.</p>
+<ul>
+<li>FibonacciLite.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/BF675BA2-2B7D-45F8-910C-F967CB686EF3/FibonacciLite.java">FibonacciLite.java</a></li>
+</ul>
+</li>
+<li>
+<p>a to the power of b<br />
+Link: <a href="https://docs.google.com/document/d/1X9CSnX9KKMbfKEPTvZjqHhPsxvf8dyjSs5oFOFJJXKc/edit">docs.google.com/document/d/1X9CSnX9KKMbfKEPTvZjqHhPsxvf8dyjSs5oFOFJJXKc/edit</a></p>
+<p>Evaluate a to the power of b, assuming both a and b are integers and b is non-negative.</p>
+<p><strong>Examples</strong><br />
+power(2, 0) = 1<br />
+power(2, 3) = 8<br />
+power(0, 10) = 0<br />
+power(-2, 5) = -32</p>
+<p><strong>Corner Cases</strong><br />
+In this question, we assume 0^0 = 1.<br />
+What if the result is overflowed? We can assume the result will not be overflowed when we solve this problem on this online judge.</p>
+<ul>
+<li>aToThePowerOfb.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/64913206-319C-496E-87DE-85D96184245F/aToThePowerOfb.java">aToThePowerOfb.java</a></li>
+</ul>
+</li>
+<li>
+<p>Selection Sort<br />
+Link: <a href="https://docs.google.com/document/d/12j6uEC3a9B13vwCSQg_ubg5dqNAty3YW5Ga508OY0r4/edit">docs.google.com/document/d/12j6uEC3a9B13vwCSQg_ubg5dqNAty3YW5Ga508OY0r4/edit</a></p>
+<p>Given an array of integers, sort the elements in the array in ascending order. The selection sort algorithm should be used to solve this problem.</p>
+<p><strong>Examples</strong><br />
+{1} is sorted to {1}<br />
+{1, 2, 3} is sorted to {1, 2, 3}<br />
+{3, 2, 1} is sorted to {1, 2, 3}<br />
+{4, 2, -3, 6, 1} is sorted to {-3, 1, 2, 4, 6}</p>
+<p><strong>Corner Cases</strong><br />
+What if the given array is null? In this case, we do not need to do anything.<br />
+What if the given array is of length zero? In this case, we do not need to do anything.</p>
+<ul>
+<li>SelectionSort.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/B55FD048-F573-46BF-8E8A-94F62B825689/SelectionSort.java">SelectionSort.java</a></li>
+</ul>
+</li>
+<li>
+<p>Merge Sort<br />
+Link: <a href="https://docs.google.com/document/d/1uQSk_2T1ndTBrWdNDwDPddlSN_kOlIzYmy6wUI7pVbA/edit">docs.google.com/document/d/1uQSk_2T1ndTBrWdNDwDPddlSN_kOlIzYmy6wUI7pVbA/edit</a></p>
+<p>Given an array of integers, sort the elements in the array in ascending order. The merge sort algorithm should be used to solve this problem.</p>
+<p><strong>Examples</strong><br />
+{1} is sorted to {1}<br />
+{1, 2, 3} is sorted to {1, 2, 3}<br />
+{3, 2, 1} is sorted to {1, 2, 3}<br />
+{4, 2, -3, 6, 1} is sorted to {-3, 1, 2, 4, 6}</p>
+<p><strong>Corner Cases</strong><br />
+What if the given array is null? In this case, we do not need to do anything.<br />
+What if the given array is of length zero? In this case, we do not need to do anything.</p>
+<ul>
+<li>
+<p>MergeSort.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/6EB6214F-54B9-4981-A2BC-EED1EF97FDF4/MergeSort.java">MergeSort.java</a></p>
+</li>
+<li>
+<p>MergeSort.mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/209D118C-3BF2-4AFC-9427-B53FCA350217/MergeSort.mov">MergeSort.mov</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Quick Sort<br />
+Link: <a href="https://docs.google.com/document/d/1YwNOW-SgM0Q2niReOoXB9awK-8jc-VOkh-hAlA_HH-E/edit">docs.google.com/document/d/1YwNOW-SgM0Q2niReOoXB9awK-8jc-VOkh-hAlA_HH-E/edit</a></p>
+<p>Given an array of integers, sort the elements in the array in ascending order. The quick sort algorithm should be used to solve this problem.</p>
+<p><strong>Examples</strong><br />
+{1} is sorted to {1}<br />
+{1, 2, 3} is sorted to {1, 2, 3}<br />
+{3, 2, 1} is sorted to {1, 2, 3}<br />
+{4, 2, -3, 6, 1} is sorted to {-3, 1, 2, 4, 6}</p>
+<p><strong>Corner Cases</strong><br />
+What if the given array is null? In this case, we do not need to do anything.<br />
+What if the given array is of length zero? In this case, we do not need to do anything.</p>
+<ul>
+<li>QuickSort.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/5EED390C-E396-4123-9CF3-B4104E5F9BFA/QuickSort.java">QuickSort.java</a></li>
+</ul>
+</li>
+<li>
+<p>Move 0s to the End I<br />
+Link: <a href="https://docs.google.com/document/d/1uiGwdDyAeFsOPL6k-KRRRgA_6956PMymdOxXLXeNOfg/edit">docs.google.com/document/d/1uiGwdDyAeFsOPL6k-KRRRgA_6956PMymdOxXLXeNOfg/edit</a></p>
+<p>Given an array of integers, move all the 0s to the right end of the array.<br />
+The relative order of the elements in the original array does not need to be maintained.</p>
+<p><strong>Assumptions:</strong><br />
+The given array is not null.</p>
+<p><strong>Examples:</strong><br />
+{1} --&gt; {1}<br />
+{1, 0, 3, 0, 1} --&gt; {1, 3, 1, 0, 0} or {1, 1, 3, 0, 0} or {3, 1, 1, 0, 0}</p>
+<ul>
+<li>Move0sToTheEndI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/B5F874C1-1E8D-4668-94DC-750124F2F389/Move0sToTheEndI.java">Move0sToTheEndI.java</a></li>
+</ul>
+</li>
+<li>
+<p>Rainbow Sort<br />
+Link: <a href="https://docs.google.com/document/d/1ODKG74bLYOaD2iRPrljEqoR8OHP8Aeis6s57M8NHk9Q/edit">docs.google.com/document/d/1ODKG74bLYOaD2iRPrljEqoR8OHP8Aeis6s57M8NHk9Q/edit</a></p>
+<p>Given an array of balls, where the color of the balls can only be Red, Green or Blue, sort the balls such that all the Red balls are grouped on the left side, all the Green balls are grouped in the middle and all the Blue balls are grouped on the right side. (Red is denoted by -1, Green is denoted by 0, and Blue is denoted by 1).</p>
+<p><strong>Examples</strong><br />
+{0} is sorted to {0}<br />
+{1, 0} is sorted to {0, 1}<br />
+{1, 0, 1, -1, 0} is sorted to {-1, 0, 0, 1, 1}</p>
+<p><strong>Assumptions</strong><br />
+The input array is not null.</p>
+<p><strong>Corner Cases</strong><br />
+What if the input array is of length zero? In this case, we should not do anything as well.</p>
+<ul>
+<li>RainbowSort.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/C212E33F-B1EA-42F1-94E8-54B8CD9DA1A0/RainbowSort.java">RainbowSort.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Linked List (12)</h3>
+<ul>
+<li>
+<p>Reverse Linked List</p>
+<p>Reverse a singly-linked list.</p>
+<p><strong>Examples</strong><br />
+L = null, return null<br />
+L = 1 -&gt; null, return 1 -&gt; null<br />
+L = 1 -&gt; 2 -&gt; 3 -&gt; null, return 3 -&gt; 2 -&gt; 1 -&gt; null</p>
+<ul>
+<li>
+<p>ReverseLinkedList(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/2874B5B5-D868-43AF-AC81-ADA8D3810167/ReverseLinkedList(Iterative).java">ReverseLinkedList(Iterative).java</a><br />
+Link: <a href="https://docs.google.com/document/d/1UfZzoduarCbtGz6KoBkbmL7FJFrQ-NqvHUIgWUPV2j8/edit">docs.google.com/document/d/1UfZzoduarCbtGz6KoBkbmL7FJFrQ-NqvHUIgWUPV2j8/edit</a></p>
+</li>
+<li>
+<p>ReverseLinkedList(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/3A62F26A-B952-40B3-834D-5430841F9CD6/ReverseLinkedList(Recursive).java">ReverseLinkedList(Recursive).java</a><br />
+Link: <a href="https://docs.google.com/document/d/1lVkUxg4s-3x_ZZaEnL855d4nn6uBxM7jV9HSwTu2ok0/edit">docs.google.com/document/d/1lVkUxg4s-3x_ZZaEnL855d4nn6uBxM7jV9HSwTu2ok0/edit</a></p>
+<ul>
+<li>ReverseLinkedList(Recursive).mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/5490F6AB-256E-4F66-BFE5-3AB9415E08B0/ReverseLinkedList(Recursive).mov">ReverseLinkedList(Recursive).mov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Middle Node of Linked List<br />
+Link: <a href="https://docs.google.com/document/d/1G2DWEEd5f2ium9rhTQDvJvQmgDLl8kWmRT2-GUbsii0/edit">docs.google.com/document/d/1G2DWEEd5f2ium9rhTQDvJvQmgDLl8kWmRT2-GUbsii0/edit</a></p>
+<p>Find the middle node of a given linked list.</p>
+<p><strong>Examples</strong><br />
+L = null, return null<br />
+L = 1 -&gt; null, return 1<br />
+L = 1 -&gt; 2 -&gt; null, return 1<br />
+L = 1 -&gt; 2 -&gt; 3 -&gt; null, return 2<br />
+L = 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; null, return 2</p>
+<ul>
+<li>FindMiddleNodeOfLinkedList.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/06A0E497-284B-444B-9A14-52C794D2A251/FindMiddleNodeOfLinkedList.java">FindMiddleNodeOfLinkedList.java</a></li>
+</ul>
+</li>
+<li>
+<p>Check If Linked List Has a Cycle<br />
+Link: <a href="https://docs.google.com/spreadsheets/d/1DxUnGdTDhr3IOCP5-D2d5GXLuRVfeRG8BvF9xbHXNgo/edit#gid=0">docs.google.com/spreadsheets/d/1DxUnGdTDhr3IOCP5-D2d5GXLuRVfeRG8BvF9xbHXNgo/edit#gid=0</a></p>
+<p>Check if a given linked list has a cycle. Return true if it does, otherwise return false.<br />
+ <br />
+Assumption:<br />
+You can assume there is no duplicate value appear in the linked list.</p>
+<ul>
+<li>CheckIfLinkedListHasACycle.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/94FA9AEB-25D9-4659-9A95-CD488536E6A5/CheckIfLinkedListHasACycle.java">CheckIfLinkedListHasACycle.java</a></li>
+</ul>
+</li>
+<li>
+<p>Insert in Sorted Linked List<br />
+Link: <a href="https://docs.google.com/document/d/1Fya02WNyCBxpyYpRI7ZH2GWL6_DLDJpj7zv0BwTFZpo/edit">docs.google.com/document/d/1Fya02WNyCBxpyYpRI7ZH2GWL6_DLDJpj7zv0BwTFZpo/edit</a></p>
+<p>Insert a value in a sorted linked list.</p>
+<p><strong>Examples</strong><br />
+L = null, insert 1, return 1 -&gt; null<br />
+L = 1 -&gt; 3 -&gt; 5 -&gt; null, insert 2, return 1 -&gt; 2 -&gt; 3 -&gt; 5 -&gt; null<br />
+L = 1 -&gt; 3 -&gt; 5 -&gt; null, insert 3, return 1 -&gt; 3 -&gt; 3 -&gt; 5 -&gt; null<br />
+L = 2 -&gt; 3 -&gt; null, insert 1, return 1 -&gt; 2 -&gt; 3 -&gt; null</p>
+<ul>
+<li>InsertInSortedLinkedList.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/9B0B8076-8E7E-48C2-8C0D-84252B728069/InsertInSortedLinkedList.java">InsertInSortedLinkedList.java</a></li>
+</ul>
+</li>
+<li>
+<p>Merge Two Sorted Linked Lists<br />
+Link: <a href="https://docs.google.com/document/d/1u4hzGDAHyKwYcCCZOzundrbL8OC1KYpIufeSLhjXs7U/edit">docs.google.com/document/d/1u4hzGDAHyKwYcCCZOzundrbL8OC1KYpIufeSLhjXs7U/edit</a></p>
+<p>Merge two sorted lists into one large sorted list.</p>
+<p><strong>Examples</strong><br />
+L1 = 1 -&gt; 4 -&gt; 6 -&gt; null, L2 = 2 -&gt; 5 -&gt; null, merge L1 and L2 to 1 -&gt; 2 -&gt; 4 -&gt; 5 -&gt; 6 -&gt; null<br />
+L1 = null, L2 = 1 -&gt; 2 -&gt; null, merge L1 and L2 to 1 -&gt; 2 -&gt; null<br />
+L1 = null, L2 = null, merge L1 and L2 to null</p>
+<ul>
+<li>MergeTwoSortedLinkedList.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/3F8E95C1-8696-48C6-B4FA-50385B26ADAD/MergeTwoSortedLinkedList.java">MergeTwoSortedLinkedList.java</a></li>
+</ul>
+</li>
+<li>
+<p>ReOrder Linked List<br />
+Link: <a href="https://docs.google.com/document/d/1k74ak7BpoEy60J5hXx0xQApuxUjI5LW8skN5VvPXIYw/edit">docs.google.com/document/d/1k74ak7BpoEy60J5hXx0xQApuxUjI5LW8skN5VvPXIYw/edit</a></p>
+<p>Reorder the given singly-linked list N1 -&gt; N2 -&gt; N3 -&gt; N4 -&gt; … -&gt; Nn -&gt; null to be N1- &gt; Nn -&gt; N2 -&gt; Nn-1 -&gt; N3 -&gt; Nn-2 -&gt; … -&gt; null</p>
+<p><strong>Examples</strong><br />
+L = null, is reordered to null<br />
+L = 1 -&gt; null, is reordered to 1 -&gt; null<br />
+L = 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; null, is reordered to 1 -&gt; 4 -&gt; 2 -&gt; 3 -&gt; null<br />
+L = 1 -&gt; 2 -&gt; 3 -&gt; null, is reordred to 1 -&gt; 3 -&gt; 2 -&gt; null</p>
+<ul>
+<li>ReorderLinkedList.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/48A21B5A-5C5B-41EF-94D7-F5F3622AE6C4/ReorderLinkedList.java">ReorderLinkedList.java</a></li>
+</ul>
+</li>
+<li>
+<p>Partition Linked List<br />
+Link: <a href="https://docs.google.com/document/d/1vidX-QF_vgU7GHPi_2HR2nX1cNcIpbpYIVyTL5aVt1o/edit#">docs.google.com/document/d/1vidX-QF_vgU7GHPi_2HR2nX1cNcIpbpYIVyTL5aVt1o/edit#</a></p>
+<p>Given a linked list and a target value T, partition it such that all nodes less than T are listed before the nodes larger than or equal to target value T. The original relative order of the nodes in each of the two partitions should be preserved.</p>
+<p><strong>Examples</strong><br />
+L = 2 -&gt; 4 -&gt; 3 -&gt; 5 -&gt; 1 -&gt; null, T = 3, is partitioned to 2 -&gt; 1 -&gt; 4 -&gt; 3 -&gt; 5 -&gt; null</p>
+<ul>
+<li>PartitionLinkedList.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/7F653FC8-8E72-455E-AEE8-D820218A3B40/PartitionLinkedList.java">PartitionLinkedList.java</a></li>
+</ul>
+</li>
+<li>
+<p>Merge Sort Linked List<br />
+Link: <a href="https://docs.google.com/document/d/1HVQAZclbKwc-zvolzAZzwYhRj0BN07aUTwRinU3idvc/edit">docs.google.com/document/d/1HVQAZclbKwc-zvolzAZzwYhRj0BN07aUTwRinU3idvc/edit</a></p>
+<p>Given a singly-linked list, where each node contains an integer value, sort it in ascending order. The merge sort algorithm should be used to solve this problem.</p>
+<p><strong>Examples</strong><br />
+null, is sorted to null<br />
+1 -&gt; null, is sorted to 1 -&gt; null<br />
+1 -&gt; 2 -&gt; 3 -&gt; null, is sorted to 1 -&gt; 2 -&gt; 3 -&gt; null<br />
+4 -&gt; 2 -&gt; 6 -&gt; -3 -&gt; 5 -&gt; null, is sorted to -3 -&gt; 2 -&gt; 4 -&gt; 5 -&gt; 6</p>
+<ul>
+<li>MergeSortLinkedList.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/47189D67-49E0-4BE1-826C-311D00FC6C28/MergeSortLinkedList.java">MergeSortLinkedList.java</a></li>
+</ul>
+</li>
+<li>
+<p>Add Two Numbers<br />
+Link: <a href="https://docs.google.com/document/d/15VTkcZMAzdgE5mt6TIO_vU0AU9xyBWRcwZgxkZ4XH98/edit">docs.google.com/document/d/15VTkcZMAzdgE5mt6TIO_vU0AU9xyBWRcwZgxkZ4XH98/edit</a></p>
+<p>You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.  </p>
+<p><strong>Example</strong><br />
+Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)<br />
+Output: 7 -&gt; 0 -&gt; 8</p>
+<ul>
+<li>AddTwoNumbers.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/4C5D3978-DAD1-42AC-B541-1E048907B090/AddTwoNumbers.java">AddTwoNumbers.java</a></li>
+</ul>
+</li>
+<li>
+<p>Check If Linked List is Palindrome<br />
+Link: <a href="https://docs.google.com/document/d/15ffQzrg7HtnfCiOAqbp6wyHxgbNDIfbgNPs9mYRNFlE/edit">docs.google.com/document/d/15ffQzrg7HtnfCiOAqbp6wyHxgbNDIfbgNPs9mYRNFlE/edit</a></p>
+<p>Given a linked list, check whether it is a palindrome.</p>
+<p><strong>Examples:</strong><br />
+Input:   1 -&gt; 2 -&gt; 3 -&gt; 2 -&gt; 1 -&gt; null<br />
+output: true.<br />
+Input:   1 -&gt; 2 -&gt; 3 -&gt; null  <br />
+output: false.</p>
+<p><strong>Requirements:</strong><br />
+Space complexity must be O(1)</p>
+<ul>
+<li>CheckIfLinekdListIsPalindrome.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/804118AF-1721-421B-809D-5F617070A573/CheckIfLinekdListIsPalindrome.java">CheckIfLinekdListIsPalindrome.java</a></li>
+</ul>
+</li>
+<li>
+<p>Remove Linked List Elements<br />
+Link: <a href="https://docs.google.com/document/d/1rNMLF1jzjIEzqtCcaa5MoI_pWTkw8NhHW8IAdeHONTQ/edit">docs.google.com/document/d/1rNMLF1jzjIEzqtCcaa5MoI_pWTkw8NhHW8IAdeHONTQ/edit</a></p>
+<p>Remove all elements from a linked list of integers that have value <strong><em>val</em></strong>.</p>
+<p><strong>Example</strong><br />
+<strong><em>Given:</em></strong> 1 --&gt; 2 --&gt; 6 --&gt; 3 --&gt; 4 --&gt; 5 --&gt; 6, <strong><em>val</em></strong> = 6<br />
+<strong><em>Return:</em></strong> 1 --&gt; 2 --&gt; 3 --&gt; 4 --&gt; 5</p>
+<ul>
+<li>RemoveLinkedListElements.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/2FF889FC-FF92-4E59-B94E-6BEDF3FC47D6/RemoveLinkedListElements.java">RemoveLinkedListElements.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Queue &amp; Stack (5)</h3>
+<ul>
+<li>
+<p>Sort With 2 Stacks<br />
+Link: <a href="https://docs.google.com/document/d/1GjvzvGGOwBvYVnBG6dWKlPmeyTJhLT5nFEeHukn4kZk/edit">docs.google.com/document/d/1GjvzvGGOwBvYVnBG6dWKlPmeyTJhLT5nFEeHukn4kZk/edit</a></p>
+<p>Given an array that is initially stored in one stack, sort it with one additional stacks (total 2 stacks).<br />
+After sorting the original stack should contain the sorted integers and from top to bottom the integers are sorted in ascending order.</p>
+<p><strong>Assumptions:</strong><br />
+The given stack is not null.<br />
+There can be duplicated numbers in the give stack.</p>
+<p><strong>Requirements:</strong><br />
+No additional memory, time complexity = O(n ^ 2).</p>
+<ul>
+<li>SortWithTwoStacks.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/0EFA3971-1DE0-4141-91D4-8C1A980E3F0A/SortWithTwoStacks.java">SortWithTwoStacks.java</a></li>
+</ul>
+</li>
+<li>
+<p>Queue by Two Stacks<br />
+Link: <a href="https://docs.google.com/document/d/1znufTCzh1jcuDQNLQf7VZJ13X-649aoXnmk40C93_6w/edit">docs.google.com/document/d/1znufTCzh1jcuDQNLQf7VZJ13X-649aoXnmk40C93_6w/edit</a></p>
+<p>Implement a queue by using two stacks. The queue should provide size(), isEmpty(), offer(), poll() and peek() operations. When the queue is empty, poll() and peek() should return null.</p>
+<p><strong>Assumptions</strong><br />
+The elements in the queue are all Integers.<br />
+size() should return the number of elements buffered in the queue.<br />
+isEmpty() should return true if there is no element buffered in the queue, false otherwise.</p>
+<ul>
+<li>QueueByTwoStacks.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/A8E402F1-0FA2-4382-8A2C-D3FDC3BABA9C/QueueByTwoStacks.java">QueueByTwoStacks.java</a></li>
+</ul>
+</li>
+<li>
+<p>Stack with min( )<br />
+Link: <a href="https://docs.google.com/document/d/1ZchtSyimS7-tSs9IG7CsE02tAZg1wSe8zCpX2OumLEg/edit">docs.google.com/document/d/1ZchtSyimS7-tSs9IG7CsE02tAZg1wSe8zCpX2OumLEg/edit</a></p>
+<p>Enhance the stack implementation to support min() operation. min() should return the current minimum value in the stack. If the stack is empty, min() should return -1.</p>
+<p>push(int element) - push the element to top<br />
+pop() - return the top element and remove it, if the stack is empty, return -1<br />
+top() - return the top element without remove it, if the stack is empty, return -1<br />
+min() - return the current min value in the stack.</p>
+<ul>
+<li>StackWithMin().java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/5BADB6B8-570F-47D6-B090-66B961FAE8A2/StackWithMin().java">StackWithMin().java</a></li>
+</ul>
+</li>
+<li>
+<p>Stack by Queue(s)</p>
+<p>Implement a stack containing integers using queue(s). The stack should provide push(x), pop(), top() and isEmpty() operations.</p>
+<p>If the stack is empty, then top() and pop() will return null.</p>
+<ul>
+<li>StackByQueue.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/BF67AB19-36AA-489A-9FF5-42166AC005F1/StackByQueue.java">StackByQueue.java</a></li>
+</ul>
+</li>
+<li>
+<p>Deque by Three Stacks<br />
+Link: <a href="https://docs.google.com/document/d/1n-PdZSQfT5TYEWpRk7IPsKlJyPf0GAU3kadzi21fRdU/edit">docs.google.com/document/d/1n-PdZSQfT5TYEWpRk7IPsKlJyPf0GAU3kadzi21fRdU/edit</a></p>
+<p>Implement a deque by using three stacks. The queue should provide size(), isEmpty(), offerFirst(), offerLast(), pollFirst(), pollLast(), peekFirst() and peekLast() operations. When the queue is empty, pollFirst(), pollLast(), peekFirst() and peek() should return null.</p>
+<p><strong>Assumptions</strong><br />
+The elements in the queue are all Integers.<br />
+size() should return the number of elements buffered in the queue.<br />
+isEmpty() should return true if there is no element buffered in the queue, false otherwise.<br />
+The amortized time complexity of all operations should be O(1).</p>
+<ul>
+<li>DequeByThreeStacks.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/E453E70B-44A4-4C3B-9782-96FF903CB4A6/DequeByThreeStacks.java">DequeByThreeStacks.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Tree &amp; Binary Search Tree (15)</h3>
+<ul>
+<li>
+<p>Pre-order Traversal of Binary Tree</p>
+<p>Implement a recursive, pre-order traversal of a given binary tree, return the list of keys of each node in the tree as it is pre-order traversed.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+1      4        11<br />
+Pre-order traversal is [5, 3, 1, 4, 8, 11]</p>
+<p><strong>Corner Cases</strong><br />
+What if the given binary tree is null? Return an empty list in this case.</p>
+<ul>
+<li>
+<p>PreOrderTraversalOfBinaryTree(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/EE3D8394-942F-4DAC-95E6-6AF84806CFF1/PreOrderTraversalOfBinaryTree(Iterative).java">PreOrderTraversalOfBinaryTree(Iterative).java</a><br />
+Link: <a href="https://docs.google.com/document/d/1sskAbjggI5Y2WOcAOy_ozxJoKUA9JUs0gMM4U5v7vNE/edit">docs.google.com/document/d/1sskAbjggI5Y2WOcAOy_ozxJoKUA9JUs0gMM4U5v7vNE/edit</a></p>
+</li>
+<li>
+<p>PreOrderTraversalOfBinaryTree(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/2480D29D-C46F-4E10-8402-8EC2A1945576/PreOrderTraversalOfBinaryTree(Recursive).java">PreOrderTraversalOfBinaryTree(Recursive).java</a><br />
+Link: <a href="https://docs.google.com/document/d/1kJrGjUA9LXwPzhU79g3PLh1pZQB8D6PwlMRpMRVGI0w/edit">docs.google.com/document/d/1kJrGjUA9LXwPzhU79g3PLh1pZQB8D6PwlMRpMRVGI0w/edit</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>In-order Traversal of Binary Tree</p>
+<p>Implement a recursive, in-order traversal of a given binary tree, return the list of keys of each node in the tree as it is in-order traversed.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+1      4        11<br />
+In-order traversal is [1, 3, 4, 5, 8, 11]</p>
+<p><strong>Corner Cases</strong><br />
+What if the given binary tree is null? Return an empty list in this case.</p>
+<ul>
+<li>
+<p>InOrderTraversalOfBinaryTree(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/F6BF5DDC-8079-4DEE-9DB0-929A251B222F/InOrderTraversalOfBinaryTree(Iterative).java">InOrderTraversalOfBinaryTree(Iterative).java</a><br />
+Link: <a href="https://docs.google.com/document/d/1WLpWtt-QI8fT1bXV-mIV0CTYbsKAPQ6D0XJ3AMIEWOw/edit">docs.google.com/document/d/1WLpWtt-QI8fT1bXV-mIV0CTYbsKAPQ6D0XJ3AMIEWOw/edit</a></p>
+</li>
+<li>
+<p>InOrderTraversalOfBinaryTree(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/FABDF6F1-8C11-423E-A8B8-599AC3D9A7C6/InOrderTraversalOfBinaryTree(Recursive).java">InOrderTraversalOfBinaryTree(Recursive).java</a><br />
+Link: <a href="https://docs.google.com/document/d/10_KNnKz7O1MSSbbfnPh0ZWZS_SYiwR_vnjtrW24MfgY/edit">docs.google.com/document/d/10_KNnKz7O1MSSbbfnPh0ZWZS_SYiwR_vnjtrW24MfgY/edit</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Post-order Traversal of Binary Tree</p>
+<p>Implement a recursive, post-order traversal of a given binary tree, return the list of keys of each node in the tree as it is post-order traversed.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+1      4        11<br />
+Post-order traversal is [1, 4, 3, 11, 8, 5]</p>
+<p><strong>Corner Cases</strong><br />
+What if the given binary tree is null? Return an empty list in this case.</p>
+<ul>
+<li>
+<p>PostOrderTraversalOfBinaryTree(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/196A58C2-9E2E-4F9B-90D4-82A7F5A98DBA/PostOrderTraversalOfBinaryTree(Recursive).java">PostOrderTraversalOfBinaryTree(Recursive).java</a><br />
+Link: <a href="https://docs.google.com/document/d/1kTcjehJMOIUoc6L0Ro3AYieTnDcByBl5cM98CAmbOXg/edit">docs.google.com/document/d/1kTcjehJMOIUoc6L0Ro3AYieTnDcByBl5cM98CAmbOXg/edit</a></p>
+</li>
+<li>
+<p>PostOrderTraversalOfBinaryTree(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/C47A48CF-C7A5-45FB-BD88-5B9BFE977772/PostOrderTraversalOfBinaryTree(Iterative).java">PostOrderTraversalOfBinaryTree(Iterative).java</a><br />
+Link: <a href="https://docs.google.com/document/d/1I_-HD0wRgdu8YNu69zVXvNN6iRc7gVwbBFfYwNXMmhw/edit">docs.google.com/document/d/1I_-HD0wRgdu8YNu69zVXvNN6iRc7gVwbBFfYwNXMmhw/edit</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Height of Binary Tree<br />
+Link: <a href="https://docs.google.com/document/d/1NJx6s3C8CG-iObVEAY5e7W0GGeiBAkofNVTXDF2vrgI/edit">docs.google.com/document/d/1NJx6s3C8CG-iObVEAY5e7W0GGeiBAkofNVTXDF2vrgI/edit</a></p>
+<p>Find the height of binary tree.</p>
+<p><strong>Examples:</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+1      4        11<br />
+The height of above binary tree is 3.</p>
+<ul>
+<li>HeightOfBinaryTree.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/6C025262-EAD6-4AA8-AA08-AB7C3FE85D64/HeightOfBinaryTree.java">HeightOfBinaryTree.java</a></li>
+</ul>
+</li>
+<li>
+<p>Check If Binary Tree is Balanced<br />
+Link: <a href="https://docs.google.com/document/d/1NNmU3tOsNevsOyS0h_1hCy1n3hD6v9nautxda8TbMIY/edit">docs.google.com/document/d/1NNmU3tOsNevsOyS0h_1hCy1n3hD6v9nautxda8TbMIY/edit</a></p>
+<p>Check if a given binary tree is balanced. A balanced binary tree is one in which the depths of every node’s left and right subtree differ by at most 1.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+1      4        11<br />
+is balanced binary tree,<br />
+        5<br />
+      /<br />
+    3<br />
+  /   \<br />
+1      4<br />
+is not balanced binary tree.</p>
+<p><strong>Corner Cases</strong><br />
+What if the binary tree is null? Return true in this case.</p>
+<ul>
+<li>CheckIfBinaryTreeIsBalanced.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/501927F1-B8A7-4B55-93C9-4121A8ACF7ED/CheckIfBinaryTreeIsBalanced.java">CheckIfBinaryTreeIsBalanced.java</a></li>
+</ul>
+</li>
+<li>
+<p>Symmetric Binary Tree<br />
+Link: <a href="https://docs.google.com/document/d/1Om5ENnHPJGFA-ZbTJD2H-RVqF5N14NrP1Ut6YtCZCl4/edit">docs.google.com/document/d/1Om5ENnHPJGFA-ZbTJD2H-RVqF5N14NrP1Ut6YtCZCl4/edit</a></p>
+<p>Check if a given binary tree is symmetric.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        3<br />
+  /   \    /   \<br />
+1      4  4      1<br />
+is symmetric.<br />
+        5<br />
+      /    \<br />
+    3        3<br />
+  /   \    /   \<br />
+1      4  1      4<br />
+is not symmetric.</p>
+<p><strong>Corner Cases</strong><br />
+What if the binary tree is null? Return true in this case.</p>
+<ul>
+<li>SymmetricBinaryTree.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/18D714FB-2505-4B28-BD23-8BF87E664477/SymmetricBinaryTree.java">SymmetricBinaryTree.java</a></li>
+</ul>
+</li>
+<li>
+<p>Tweaked Identical Binary Trees<br />
+Link: <a href="https://docs.google.com/document/d/19p7-MB4vyJGsbBfhbmBRPYcZAobZ_RmnWXOBaITH-7o/edit">docs.google.com/document/d/19p7-MB4vyJGsbBfhbmBRPYcZAobZ_RmnWXOBaITH-7o/edit</a></p>
+<p>Determine whether two given binary trees are identical assuming any number of ‘tweak’s are allowed. A tweak is defined as a swap of the children of one node in the tree.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \<br />
+1      4<br />
+and<br />
+        5<br />
+      /    \<br />
+    8        3<br />
+           /   \<br />
+          1     4<br />
+the two binary trees are tweaked identical.</p>
+<ul>
+<li>TweakedIdenticalBinaryTree.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/E5A4D2F9-4A2C-4057-B5A8-518592F5CA96/TweakedIdenticalBinaryTree.java">TweakedIdenticalBinaryTree.java</a></li>
+</ul>
+</li>
+<li>
+<p>Is Binary Search Tree or Not<br />
+Link: <a href="https://docs.google.com/document/d/1DGact6-7roZQkpUM4kqA0zEUC00iLCRGFOilYxWs_AE/edit">docs.google.com/document/d/1DGact6-7roZQkpUM4kqA0zEUC00iLCRGFOilYxWs_AE/edit</a></p>
+<p>Determine if a given binary tree is binary search tree.There should no be duplicate keys in binary search tree.</p>
+<p><strong>Assumptions</strong><br />
+You can assume the keys stored in the binary search tree can not be Integer.MIN_VALUE or Integer.MAX_VALUE.</p>
+<p><strong>Corner Cases</strong><br />
+What if the binary tree is null? Return true in this case.</p>
+<ul>
+<li>IsBinarySearchTreeOrNot.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/5D51D760-1164-4377-8B09-020067D3F549/IsBinarySearchTreeOrNot.java">IsBinarySearchTreeOrNot.java</a></li>
+</ul>
+</li>
+<li>
+<p>Get Keys in Binary Search Tree in Given Range<br />
+Link: <a href="https://docs.google.com/document/d/1B0UIkrhQ4WPGH1EeQgMP4stg9B9BdyzhYMK7XskxqIs/edit">docs.google.com/document/d/1B0UIkrhQ4WPGH1EeQgMP4stg9B9BdyzhYMK7XskxqIs/edit</a></p>
+<p>Get the list of keys in a given binary search tree in a given range[min, max] in ascending order, both min and max are inclusive.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+ 1     4        11<br />
+get the keys in [2, 5] in ascending order, result is  [3, 4, 5]</p>
+<p><strong>Corner Cases</strong><br />
+What if there are no keys in the given range? Return an empty list in this case.</p>
+<ul>
+<li>GetKeysInBinarySearchTreeInGivenRange.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/2A2A1DA3-0C23-41A1-BFF1-1D712B4FEE05/GetKeysInBinarySearchTreeInGivenRange.java">GetKeysInBinarySearchTreeInGivenRange.java</a></li>
+</ul>
+</li>
+<li>
+<p>Search in Binary Search Tree<br />
+Link: <a href="https://docs.google.com/document/d/1MrSBES7ilpSrx8NrpqLoCnxciMDTSf3PZkfXQYAy1lA/edit">docs.google.com/document/d/1MrSBES7ilpSrx8NrpqLoCnxciMDTSf3PZkfXQYAy1lA/edit</a></p>
+<p>Find the target key K in the given binary search tree, return the node that contains the key if K is found, otherwise return null.</p>
+<ul>
+<li>
+<p>SearchInBinarySearchTree(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/D4021F74-6F8B-4168-813A-CD93768F57BC/SearchInBinarySearchTree(Iterative).java">SearchInBinarySearchTree(Iterative).java</a></p>
+</li>
+<li>
+<p>SerachInBinarySearchTree(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/D595E70C-44AE-4E84-A407-99C6922A778E/SerachInBinarySearchTree(Recursive).java">SerachInBinarySearchTree(Recursive).java</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Insert in Binary Search Tree<br />
+Link: <a href="https://docs.google.com/document/d/1d22owc9suDO5IvoE0Yg_01GNYB8IjJ6ejJ_wyvFUmWA/edit">docs.google.com/document/d/1d22owc9suDO5IvoE0Yg_01GNYB8IjJ6ejJ_wyvFUmWA/edit</a></p>
+<p>Insert a key in a binary search tree if the binary search tree does not already contain the key. Return the root of the binary search tree.</p>
+<p><strong>Assumptions</strong><br />
+There are no duplicate keys in the binary search tree<br />
+If the key is already existed in the binary search tree, you do not need to do anything</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \<br />
+ 1     4<br />
+insert 11, the tree becomes<br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+ 1     4       11<br />
+insert 6, the tree becomes<br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \     /  \<br />
+ 1     4   6    11</p>
+<ul>
+<li>
+<p>InsertInBinarySearchTree(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/CBF0241F-A273-48AF-A876-A57D43E8190F/InsertInBinarySearchTree(Iterative).java">InsertInBinarySearchTree(Iterative).java</a></p>
+</li>
+<li>
+<p>InsertInBinarySearchTree(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/0E0026B3-30A5-4ADD-9EA2-49C628064B52/InsertInBinarySearchTree(Recursive).java">InsertInBinarySearchTree(Recursive).java</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Delete in Binary Search Tree<br />
+Link: <a href="https://docs.google.com/document/d/1NxYuQxxTuSBcwsq64wFG0C8fGxR83NPsLnZ-eVTLuys/edit">docs.google.com/document/d/1NxYuQxxTuSBcwsq64wFG0C8fGxR83NPsLnZ-eVTLuys/edit</a></p>
+<p>Delete the target key K in the given binary search tree if the binary search tree contains K. Return the root of the binary search tree.<br />
+Find your own way to delete the node from the binary search tree, after deletion the binary search tree's property should be maintained.</p>
+<p><strong>Assumptions</strong><br />
+There are no duplicate keys in the binary search tree<br />
+The smallest larger node is first candidate after deletion</p>
+<ul>
+<li>DeleteInBinarySearchTree.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/EBC8E123-8AAF-4ECC-9337-A011003CF370/DeleteInBinarySearchTree.java">DeleteInBinarySearchTree.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Heap &amp; Graph Search I: BFS (5)</h3>
+<ul>
+<li>
+<p>K Smallest in Unsorted Array<br />
+Link: <a href="https://docs.google.com/document/d/1Nsrf9tnivy7-26hBKhc9AiCprHpGEH6Cm8OjrS3bO-0/edit">docs.google.com/document/d/1Nsrf9tnivy7-26hBKhc9AiCprHpGEH6Cm8OjrS3bO-0/edit</a></p>
+<p>Find the K smallest numbers in an unsorted integer array A. The returned numbers should be in ascending order.</p>
+<p><strong>Assumptions</strong><br />
+A is not null<br />
+K is &gt;= 0 and smaller than or equal to size of A</p>
+<p><strong>Return</strong><br />
+an array with size K containing the K smallest numbers in ascending order</p>
+<p><strong>Examples</strong><br />
+A = {3, 4, 1, 2, 5}, K = 3, the 3 smallest numbers are {1, 2, 3}</p>
+<ul>
+<li>KSmallestInUnsortedArray.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/9CD5DF5A-B95A-45E1-B581-C1C96305156E/KSmallestInUnsortedArray.java">KSmallestInUnsortedArray.java</a></li>
+</ul>
+</li>
+<li>
+<p>Get Keys in Binary Tree Layer by Layer<br />
+Link: <a href="https://docs.google.com/document/d/1yTsPjdwvL4sRWiQlvCSIyV94Hx8XBdvw2bQwkMDYlEI/edit">docs.google.com/document/d/1yTsPjdwvL4sRWiQlvCSIyV94Hx8XBdvw2bQwkMDYlEI/edit</a></p>
+<p>Get the list of list of keys in a given binary tree layer by layer. Each layer is represented by a list of keys and the keys are traversed from left to right.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+ 1     4        11<br />
+the result is [ <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/C1E33C9E-A55C-42D8-84F7-50151EF2A30C/BinarySearchInSortedMatrixI(2DMappingTrick).java">5</a>, [3, 8], [1, 4, 11] ]</p>
+<p><strong>Corner Cases</strong><br />
+What if the binary tree is null? Return an empty list of list in this case.</p>
+<ul>
+<li>GetKeysInBinaryTreeLayerByLayer.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/344A9A48-E3D2-4657-AABB-80A340A4238D/GetKeysInBinaryTreeLayerByLayer.java">GetKeysInBinaryTreeLayerByLayer.java</a></li>
+</ul>
+</li>
+<li>
+<p>Bipartite<br />
+Link: <a href="https://docs.google.com/document/d/1qacDdKphBqTMCCKhADjhpib607pbVxvtlChYNk_4OHU/edit">docs.google.com/document/d/1qacDdKphBqTMCCKhADjhpib607pbVxvtlChYNk_4OHU/edit</a></p>
+<p>Determine if an undirected graph is bipartite. A bipartite graph is one in which the nodes can be divided into two groups such that no nodes have direct edges to other nodes in the same group.</p>
+<p><strong>Examples</strong><br />
+1  --   2<br />
+    /   <br />
+3  --   4<br />
+is bipartite (1, 3 in group 1 and 2, 4 in group 2).<br />
+1  --   2<br />
+    /   |<br />
+3  --   4<br />
+is not bipartite.</p>
+<p><strong>Assumptions</strong><br />
+The graph is represented by a list of nodes, and the list of nodes is not null.</p>
+<ul>
+<li>Bipartite.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/7F2920FD-4A77-4764-9D44-5A2F88D81949/Bipartite.java">Bipartite.java</a></li>
+</ul>
+</li>
+<li>
+<p>Check If Binary Tree is Completed<br />
+Link: <a href="https://docs.google.com/document/d/1vkXgUIGAWTxjOIS6KItAfh-qDZFSj4gBwRfjlCj3bA0/edit">docs.google.com/document/d/1vkXgUIGAWTxjOIS6KItAfh-qDZFSj4gBwRfjlCj3bA0/edit</a></p>
+<p>Check if a given binary tree is completed. A complete binary tree is one in which every level of the binary tree is completely filled except possibly the last level. Furthermore, all nodes are as far left as possible.</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \<br />
+1      4<br />
+is completed.<br />
+        5<br />
+      /    \<br />
+    3        8<br />
+  /   \        \<br />
+1      4        11<br />
+is not completed.</p>
+<p><strong>Corner Cases</strong><br />
+What if the binary tree is null? Return true in this case.</p>
+<ul>
+<li>CheckIfBinaryTreeIsCompleted.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/C10B6665-495C-4D1A-B362-AE92882C8706/CheckIfBinaryTreeIsCompleted.java">CheckIfBinaryTreeIsCompleted.java</a></li>
+</ul>
+</li>
+<li>
+<p>Kth Smallest Number in Sorted Matrix<br />
+Link: <a href="https://docs.google.com/document/d/1GAzZFh2b9Z9IK4-A8z2AUtrJflyITAdXZTvhT1dZHW0/edit">docs.google.com/document/d/1GAzZFh2b9Z9IK4-A8z2AUtrJflyITAdXZTvhT1dZHW0/edit</a></p>
+<p>Given a matrix of size N x M. For each row the elements are sorted in ascending order, and for each column the elements are also sorted in ascending order. Find the Kth smallest number in it.</p>
+<p><strong>Assumptions</strong><br />
+the matrix is not null, N &gt; 0 and M &gt; 0<br />
+K &gt; 0 and K &lt;= N * M</p>
+<p><strong>Examples</strong><br />
+{ {1,  3,   5,  7},<br />
+  {2,  4,   8,   9},<br />
+  {3,  5, 11, 15},<br />
+  {6,  8, 13, 18} }<br />
+the 5th smallest number is 4<br />
+the 8th smallest number is 6</p>
+<ul>
+<li>KthSmallestNumberInSortedMatrix.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/78E63427-5FA4-401F-AA23-33E043787305/KthSmallestNumberInSortedMatrix.java">KthSmallestNumberInSortedMatrix.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Graph Search II: DFS (4)</h3>
+<ul>
+<li>
+<p>All Subsets I<br />
+Link: <a href="https://docs.google.com/document/d/1mdfq64UdZylb1xns675h5ByYLlcwrl3yQMwRdYah6gk/edit">docs.google.com/document/d/1mdfq64UdZylb1xns675h5ByYLlcwrl3yQMwRdYah6gk/edit</a></p>
+<p>Given a set of characters represented by a String, return a list containing all subsets of the characters.</p>
+<p><strong>Assumptions</strong><br />
+There are no duplicate characters in the original set.</p>
+<p><strong>Examples</strong><br />
+Set = &quot;abc&quot;, all the subsets are [“”, “a”, “ab”, “abc”, “ac”, “b”, “bc”, “c”]<br />
+Set = &quot;&quot;, all the subsets are [&quot;&quot;]<br />
+Set = null, all the subsets are []</p>
+<ul>
+<li>AllSubsetsI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/D0642DF8-2BD9-403F-9EEE-906B00B90F74/AllSubsetsI.java">AllSubsetsI.java</a></li>
+</ul>
+</li>
+<li>
+<p>All Valid Permutations of Parentheses I<br />
+Link: <a href="https://docs.google.com/document/d/1K1JX3Q34kezBOwy_uQl-gYW9zPyK_pGZHpIl3CD3N_Q/edit">docs.google.com/document/d/1K1JX3Q34kezBOwy_uQl-gYW9zPyK_pGZHpIl3CD3N_Q/edit</a></p>
+<p>Given N pairs of parentheses “()”, return a list with all the valid permutations.</p>
+<p><strong>Assumptions</strong><br />
+N &gt; 0</p>
+<p><strong>Examples</strong><br />
+N = 1, all valid permutations are [&quot;()&quot;]<br />
+N = 3, all valid permutations are [&quot;((()))&quot;, &quot;(()())&quot;, &quot;(())()&quot;, &quot;()(())&quot;, &quot;()()()&quot;]</p>
+<ul>
+<li>AllValidPermutationsOfParenthesesI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/206555CB-2FB9-43E9-9543-C5447BE96032/AllValidPermutationsOfParenthesesI.java">AllValidPermutationsOfParenthesesI.java</a></li>
+</ul>
+</li>
+<li>
+<p>Combinations of Coins<br />
+Link: <a href="https://docs.google.com/document/d/1gocutclTuZ6umIOFsjCvSA6LHfkYuSvLz7C5KLVI8uA/edit">docs.google.com/document/d/1gocutclTuZ6umIOFsjCvSA6LHfkYuSvLz7C5KLVI8uA/edit</a></p>
+<p>Given a number of different denominations of coins (e.g., 1 cent, 5 cents, 10 cents, 25 cents), get all the possible ways to pay a target number of cents.</p>
+<p><strong>Arguments</strong><br />
+coins - an array of positive integers representing the different denominations of coins, there are no duplicate numbers and the numbers are sorted by descending order, eg. {25, 10, 5, 2, 1}<br />
+target - a non-negative integer representing the target number of cents, eg. 99</p>
+<p><strong>Assumptions</strong><br />
+coins is not null and is not empty, all the numbers in coins are positive<br />
+target &gt;= 0<br />
+You have infinite number of coins for each of the denominations, you can pick any number of the coins.</p>
+<p><strong>Return</strong><br />
+a list of ways of combinations of coins to sum up to be target.<br />
+each way of combinations is represented by list of integer, the number at each index means the number of coins used for the denomination at corresponding index.</p>
+<p><strong>Examples</strong><br />
+coins = {2, 1}, target = 4, the return should be<br />
+[<br />
+  [0, 4],   (4 cents can be conducted by 0 * 2 cents + 4 * 1 cents)<br />
+  [1, 2],   (4 cents can be conducted by 1 * 2 cents + 2 * 1 cents)<br />
+  [2, 0]    (4 cents can be conducted by 2 * 2 cents + 0 * 1 cents)<br />
+]</p>
+<ul>
+<li>CombinationsOfCoins.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/2BFB418C-0ECB-4D3D-88B0-821825924DD8/CombinationsOfCoins.java">CombinationsOfCoins.java</a></li>
+</ul>
+</li>
+<li>
+<p>All Permutations I<br />
+Link: <a href="https://docs.google.com/document/d/1QG8PM24Nl1J-4MdGrB2cvGJ6YyVglTdRTU8v1Q9rKRQ/edit">docs.google.com/document/d/1QG8PM24Nl1J-4MdGrB2cvGJ6YyVglTdRTU8v1Q9rKRQ/edit</a></p>
+<p>Given a string with no duplicate characters, return a list with all permutations of the characters.<br />
+Assume that input string is not null.</p>
+<p><strong>Examples</strong><br />
+Set = “abc”, all permutations are [“abc”, “acb”, “bac”, “bca”, “cab”, “cba”]<br />
+Set = &quot;&quot;, all permutations are [&quot;&quot;]</p>
+<ul>
+<li>AllPermutationsI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/19B8A150-2033-4F7B-AC5E-76B0F58148FB/AllPermutationsI.java">AllPermutationsI.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>HashMap &amp; String I (8)</h3>
+<ul>
+<li>
+<p>Top K Frequent Words<br />
+Link: <a href="https://docs.google.com/document/d/1SdHiOOr6kXgjT2xMm53Q36lRFV2adPM489GHD68k2sU/edit">docs.google.com/document/d/1SdHiOOr6kXgjT2xMm53Q36lRFV2adPM489GHD68k2sU/edit</a></p>
+<p>Given a composition with different kinds of words, return a list of the top K most frequent words in the composition.</p>
+<p><strong>Assumptions</strong><br />
+the composition is not null and is not guaranteed to be sorted<br />
+K &gt;= 1 and K could be larger than the number of distinct words in the composition, in this case, just return all the distinct words</p>
+<p><strong>Return</strong><br />
+a list of words ordered from most frequent one to least frequent one (the list could be of size K or smaller than K)</p>
+<p><strong>Examples</strong><br />
+Composition = [&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;, &quot;b&quot;, &quot;b&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;d&quot;], top 2 frequent words are [“b”, “c”]<br />
+Composition = [&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;, &quot;b&quot;, &quot;b&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;d&quot;], top 4 frequent words are [“b”, “c”, &quot;a&quot;, &quot;d&quot;]<br />
+Composition = [&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;, &quot;b&quot;, &quot;b&quot;, &quot;c&quot;, &quot;c&quot;, &quot;c&quot;, &quot;d&quot;], top 5 frequent words are [“b”, “c”, &quot;a&quot;, &quot;d&quot;]</p>
+<ul>
+<li>TopKFrequentWords.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/E6FA22E2-8EC6-4A77-BA92-B7AB38DD2E6D/TopKFrequentWords.java">TopKFrequentWords.java</a></li>
+</ul>
+</li>
+<li>
+<p>Missing Number I<br />
+Link: <a href="https://docs.google.com/document/d/1DNTbeq60Czv_yR8v8ER2-6t7zqWX_10r9y1q39tJUqs/edit">docs.google.com/document/d/1DNTbeq60Czv_yR8v8ER2-6t7zqWX_10r9y1q39tJUqs/edit</a></p>
+<p>Given an integer array of size N - 1, containing all the numbers from 1 to N except one, find the missing number.</p>
+<p><strong>Assumptions</strong><br />
+The given array is not null, and N &gt;= 1</p>
+<p><strong>Examples</strong><br />
+A = {2, 1, 4}, the missing number is 3<br />
+A = {1, 2, 3}, the missing number is 4<br />
+A = {}, the missing number is 1</p>
+<ul>
+<li>MissingNumberI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/AB5B816B-96AD-4221-9A65-F777FBBB811D/MissingNumberI.java">MissingNumberI.java</a></li>
+</ul>
+</li>
+<li>
+<p>Common Numbers of Two Sorted Arrays<br />
+Link: <a href="https://docs.google.com/document/d/1UQragZUVcZ0zcp5QD_SYqFImu-11WZFPrGHw3X4qgEw/edit">docs.google.com/document/d/1UQragZUVcZ0zcp5QD_SYqFImu-11WZFPrGHw3X4qgEw/edit</a></p>
+<p>Find all numbers that appear in both of two sorted arrays (the two arrays are all sorted in ascending order).</p>
+<p><strong>Assumptions</strong><br />
+In each of the two sorted arrays, there could be duplicate numbers.<br />
+Both two arrays are not null.</p>
+<p><strong>Examples</strong><br />
+A = {1, 1, 2, 2, 3}, B = {1, 1, 2, 5, 6}, common numbers are [1, 1, 2]</p>
+<ul>
+<li>CommonNumbersOfTwoSortedArrays(TwoPointers).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/A36B19D7-6E73-453C-B751-1E81A7A188BE/CommonNumbersOfTwoSortedArrays(TwoPointers).java">CommonNumbersOfTwoSortedArrays(TwoPointers).java</a></li>
+</ul>
+</li>
+<li>
+<p>Remove Certain Characters<br />
+Link: <a href="https://docs.google.com/document/d/1-ZD5psuZDXl7KMSFz2qp2ViOWY2y5FsLdqZPbxontrg/edit">docs.google.com/document/d/1-ZD5psuZDXl7KMSFz2qp2ViOWY2y5FsLdqZPbxontrg/edit</a></p>
+<p>Remove given characters in input string, the relative order of other characters should be remained. Return the new string after deletion.</p>
+<p><strong>Assumptions</strong><br />
+The given input string is not null.<br />
+The characters to be removed is given by another string, it is guaranteed to be not null.</p>
+<p><strong>Examples</strong><br />
+input = &quot;abcd&quot;, t = &quot;ab&quot;, delete all instances of 'a' and 'b', the result is &quot;cd&quot;.</p>
+<ul>
+<li>RemoveCertainCharacters.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/5C612F12-D76E-488E-99F4-39BEA3B6B254/RemoveCertainCharacters.java">RemoveCertainCharacters.java</a></li>
+</ul>
+</li>
+<li>
+<p>Remove Spaces<br />
+Link: <a href="https://docs.google.com/document/d/1DDJhVc3OCKORFV1GOCpkLvq2s9B0FHVUCHFhwln9SIk/edit">docs.google.com/document/d/1DDJhVc3OCKORFV1GOCpkLvq2s9B0FHVUCHFhwln9SIk/edit</a></p>
+<p>Given a string, remove all leading/trailing/duplicated empty spaces.</p>
+<p><strong>Assumptions:</strong><br />
+The given string is not null.</p>
+<p><strong>Examples:</strong><br />
+“  a” --&gt; “a”<br />
+“   I     love MTV ” --&gt; “I love MTV”</p>
+<ul>
+<li>RemoveSpaces.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/55D1E2B7-C4E3-45D3-991A-C97871126669/RemoveSpaces.java">RemoveSpaces.java</a></li>
+</ul>
+</li>
+<li>
+<p>Remove Adjacent Repeated Characters I<br />
+Link: <a href="https://docs.google.com/document/d/1CSVZW235XbmD8VkEVgKT52mNNTLl6rr4CSmr4o5SIo8/edit">docs.google.com/document/d/1CSVZW235XbmD8VkEVgKT52mNNTLl6rr4CSmr4o5SIo8/edit</a></p>
+<p>Remove adjacent, repeated characters in a given string, leaving only one character for each group of such characters.</p>
+<p><strong>Assumptions</strong><br />
+Try to do it in place.</p>
+<p><strong>Examples</strong><br />
+“aaaabbbc” is transferred to “abc”</p>
+<p><strong>Corner Cases</strong><br />
+If the given string is null, returning null or an empty string are both valid.</p>
+<ul>
+<li>RemoveAdjacentRepeatedCharactersI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/E303F38C-B484-428B-98E0-EAFC21328E09/RemoveAdjacentRepeatedCharactersI.java">RemoveAdjacentRepeatedCharactersI.java</a></li>
+</ul>
+</li>
+<li>
+<p>Remove Adjacent Repeated Characters IV<br />
+Link: <a href="https://docs.google.com/document/d/1rBTeSjnkiaoiyMDlK6JCz0UKVR295yVgrSO7ofHc6oc/edit">docs.google.com/document/d/1rBTeSjnkiaoiyMDlK6JCz0UKVR295yVgrSO7ofHc6oc/edit</a></p>
+<p>Repeatedly remove all adjacent, repeated characters in a given string from left to right.<br />
+No adjacent characters should be identified in the final string.</p>
+<p><strong>Examples</strong><br />
+&quot;abbbaaccz&quot; → &quot;aaaccz&quot; → &quot;ccz&quot; → &quot;z&quot;<br />
+&quot;aabccdc&quot; → &quot;bccdc&quot; → &quot;bdc&quot;</p>
+<ul>
+<li>RemoveAdjacentRepeatedCharactersIV.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/06BC0576-7E64-4119-91FD-28B4C6406E68/RemoveAdjacentRepeatedCharactersIV.java">RemoveAdjacentRepeatedCharactersIV.java</a></li>
+</ul>
+</li>
+<li>
+<p>Determine if One String is Another’s Substring<br />
+Link: <a href="https://docs.google.com/document/d/1KHvHmAok_tZ7dtyo1Gc_j-tgYDv57iooMX6rUNxR6ts/edit">docs.google.com/document/d/1KHvHmAok_tZ7dtyo1Gc_j-tgYDv57iooMX6rUNxR6ts/edit</a></p>
+<p>Determine if a small string is a substring of another large string.<br />
+Return the index of the first occurrence of the small string in the large string.<br />
+Return -1 if the small string is not a substring of the large string.</p>
+<p><strong>Assumptions</strong><br />
+Both large and small are not null<br />
+If small is empty string, return 0</p>
+<p><strong>Examples</strong><br />
+“ab” is a substring of “bcabc”, return 2<br />
+“bcd” is not a substring of “bcabc”, return -1<br />
+&quot;&quot; is substring of &quot;abc&quot;, return 0</p>
+<ul>
+<li>DetermineIfOneStringIsAnotherStringsSubstring.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/90425F72-D264-44D4-9FD4-3D86656EFEE6/DetermineIfOneStringIsAnotherStringsSubstring.java">DetermineIfOneStringIsAnotherStringsSubstring.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>String II (11)</h3>
+<ul>
+<li>
+<p>Reverse String<br />
+Link: <a href="https://docs.google.com/document/d/1Hv6l9xyJDbE9WnsSzcb9-ADY3UqstKavpdQKNMWHB7c/edit">docs.google.com/document/d/1Hv6l9xyJDbE9WnsSzcb9-ADY3UqstKavpdQKNMWHB7c/edit</a></p>
+<p>Reverse a given string.</p>
+<p><strong>Assumptions</strong><br />
+The given string is not null.</p>
+<ul>
+<li>
+<p>ReverseString(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/B5090042-F7E8-4DE7-82C7-43AC360E5921/ReverseString(Iterative).java">ReverseString(Iterative).java</a></p>
+</li>
+<li>
+<p>ReverseString(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/866F468C-4D89-4B92-820C-E5B446911B80/ReverseString(Recursive).java">ReverseString(Recursive).java</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Reverse Words in a Sentence I<br />
+Link: <a href="https://docs.google.com/document/d/1H-8hHLvTJmzPXE95BOAMKaXlBokFxLUwvehIsQFiWmI/edit">docs.google.com/document/d/1H-8hHLvTJmzPXE95BOAMKaXlBokFxLUwvehIsQFiWmI/edit</a></p>
+<p>Reverse the words in a sentence.</p>
+<p><strong>Assumptions</strong><br />
+Words are separated by single space<br />
+There are no heading or tailing white spaces</p>
+<p><strong>Examples</strong><br />
+“I love Google” → “Google love I”</p>
+<p><strong>Corner Cases</strong><br />
+If the given string is null, we do not need to do anything.</p>
+<ul>
+<li>ReverseWordsInSentenceI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/4F9ACC6D-6472-4F00-A7B4-41FE5C9FFBB0/ReverseWordsInSentenceI.java">ReverseWordsInSentenceI.java</a></li>
+</ul>
+</li>
+<li>
+<p>Right Shift by N Characters<br />
+Link: <a href="https://docs.google.com/document/d/13nbcxCzZReN81qXNkH-Hm4aOnL4Bb3df9tGJLHrBWpg/edit">docs.google.com/document/d/13nbcxCzZReN81qXNkH-Hm4aOnL4Bb3df9tGJLHrBWpg/edit</a></p>
+<p>Right shift a given string by n characters.</p>
+<p><strong>Assumptions</strong><br />
+The given string is not null.<br />
+n &gt;= 0.</p>
+<p><strong>Examples</strong><br />
+&quot;abc&quot;, 4 -&gt; &quot;cab&quot;</p>
+<ul>
+<li>
+<p>RightShiftByNCharacters(3reverse).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/770E1698-812C-4D2A-ACFD-BC2C30C0FBE9/RightShiftByNCharacters(3reverse).java">RightShiftByNCharacters(3reverse).java</a></p>
+</li>
+<li>
+<p>RightShiftByNCharacters(my).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/3083ABC6-95E1-4ED8-B84B-F31A4BA19DD9/RightShiftByNCharacters(my).java">RightShiftByNCharacters(my).java</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>String Replace (basic)<br />
+Link: <a href="https://docs.google.com/document/d/1qyho2z6ywwI5Y6mIP7uDM4SlncZZHgcW2MNJLLuESP0/edit">docs.google.com/document/d/1qyho2z6ywwI5Y6mIP7uDM4SlncZZHgcW2MNJLLuESP0/edit</a></p>
+<p>Given an original string input, and two strings S and T, replace all occurrences of S in input with T.</p>
+<p><strong>Assumptions</strong><br />
+input, S and T are not null, S is not empty string</p>
+<p><strong>Examples</strong><br />
+input = &quot;appledogapple&quot;, S = &quot;apple&quot;, T = &quot;cat&quot;, input becomes &quot;catdogcat&quot;<br />
+input = &quot;laicode&quot;, S = &quot;code&quot;, T = &quot;offer&quot;, input becomes &quot;laioffer&quot;</p>
+<ul>
+<li>StringReplace(Basic).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/ADF99DF4-DB83-4060-9D18-418BF473B4B7/StringReplace(Basic).java">StringReplace(Basic).java</a></li>
+</ul>
+</li>
+<li>
+<p>All Permutations II<br />
+Link: <a href="https://docs.google.com/document/d/1ypv5gCGPBTPJYLcm74knbmti_KQ_aeEDBEO7QUPpEZs/edit">docs.google.com/document/d/1ypv5gCGPBTPJYLcm74knbmti_KQ_aeEDBEO7QUPpEZs/edit</a></p>
+<p>Given a string with possible duplicate characters, return a list with all permutations of the characters.</p>
+<p><strong>Examples</strong><br />
+Set = “abc”, all permutations are [“abc”, “acb”, “bac”, “bca”, “cab”, “cba”]<br />
+Set = &quot;aba&quot;, all permutations are [&quot;aab&quot;, &quot;aba&quot;, &quot;baa&quot;]<br />
+Set = &quot;&quot;, all permutations are [&quot;&quot;]<br />
+Set = null, all permutations are []</p>
+<ul>
+<li>AllPermutationsII.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/688D77F2-DBC3-4CD2-B549-B4539A9AEF6B/AllPermutationsII.java">AllPermutationsII.java</a></li>
+</ul>
+</li>
+<li>
+<p>Reorder Array<br />
+Link: <a href="https://docs.google.com/document/d/1vPxnxpJPEczqRfII6OY6Fttx1p1bpQAiFUKQYzweYI4/edit">docs.google.com/document/d/1vPxnxpJPEczqRfII6OY6Fttx1p1bpQAiFUKQYzweYI4/edit</a></p>
+<p>Given an array of elements, reorder it as follow:<br />
+{ N1, N2, N3, …, N2k } → { N1, Nk+1, N2, Nk+2, N3, Nk+3, … , Nk, N2k }<br />
+{ N1, N2, N3, …, N2k+1 } → { N1, Nk+1, N2, Nk+2, N3, Nk+3, … , Nk, N2k, N2k+1 }<br />
+Try to do it in place.</p>
+<p><strong>Assumptions</strong><br />
+The given array is not null</p>
+<p><strong>Examples</strong><br />
+{ 1, 2, 3, 4, 5, 6} → { 1, 4, 2, 5, 3, 6 }<br />
+{ 1, 2, 3, 4, 5, 6, 7, 8 } → { 1, 5, 2, 6, 3, 7, 4, 8 }<br />
+{ 1, 2, 3, 4, 5, 6, 7 } → { 1, 4, 2, 5, 3, 6, 7 }</p>
+<ul>
+<li>ReorderString.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/8444EFC2-3515-4A7C-ADC2-EB3EEDFD7E96/ReorderString.java">ReorderString.java</a></li>
+</ul>
+</li>
+<li>
+<p>Compress String II<br />
+Link: <a href="https://docs.google.com/document/d/1MKHh4L7KapgENbRgS3oxA8RMdqiYcEzgwUmt1cczFZ0/edit">docs.google.com/document/d/1MKHh4L7KapgENbRgS3oxA8RMdqiYcEzgwUmt1cczFZ0/edit</a></p>
+<p>Given a string, replace adjacent, repeated characters with the character followed by the number of repeated occurrences.</p>
+<p><strong>Assumptions</strong><br />
+The string is not null<br />
+The characters used in the original string are guaranteed to be ‘a’ - ‘z’</p>
+<p><strong>Examples</strong><br />
+“abbcccdeee” → “a1b2c3d1e3”</p>
+<ul>
+<li>CompressStringII.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/7D33A90E-8B89-4B5B-AF54-95A5899B2268/CompressStringII.java">CompressStringII.java</a></li>
+</ul>
+</li>
+<li>
+<p>Decompress String II<br />
+Link: <a href="https://docs.google.com/document/d/1TUtE7JFhH_I9II_Wad180GzLtSzrQgsZu7KbX2gARjg/edit">docs.google.com/document/d/1TUtE7JFhH_I9II_Wad180GzLtSzrQgsZu7KbX2gARjg/edit</a></p>
+<p>Given a string in compressed form, decompress it to the original string. The adjacent repeated characters in the original string are compressed to have the character followed by the number of repeated occurrences.</p>
+<p><strong>Assumptions</strong><br />
+The string is not null<br />
+The characters used in the original string are guaranteed to be ‘a’ - ‘z’<br />
+There are no adjacent repeated characters with length &gt; 9</p>
+<p><strong>Examples</strong><br />
+“a1c0b2c4” → “abbcccc”</p>
+<ul>
+<li>DecompressStringII.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/19CBFF65-26EF-4E2C-8D35-2FF2B7FA02DB/DecompressStringII.java">DecompressStringII.java</a></li>
+</ul>
+</li>
+<li>
+<p>Longest Substring without Repeating Characters<br />
+Link: <a href="https://docs.google.com/document/d/1mTYwBARqDPLPxlSJQiL0_qck1uD5BuTS006EsCbdlTM/edit">docs.google.com/document/d/1mTYwBARqDPLPxlSJQiL0_qck1uD5BuTS006EsCbdlTM/edit</a></p>
+<p>Given a string, find the longest substring without any repeating characters and return the length of it. The input string is guaranteed to be not null.<br />
+For example, the longest substring without repeating letters for &quot;bcdfbd&quot; is &quot;bcdf&quot;, we should return 4 in this case.</p>
+<ul>
+<li>LongestSubstringWithoutRepeatingCharacters.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/14446ADA-8285-4A47-9AA9-609960C31ACB/LongestSubstringWithoutRepeatingCharacters.java">LongestSubstringWithoutRepeatingCharacters.java</a></li>
+</ul>
+</li>
+<li>
+<p>All anagrams<br />
+Link: <a href="https://docs.google.com/document/d/1OZS0a5FUy3TWehPaIiP6REmNLi5kVJ2S3LGQFOoXbbo/edit">docs.google.com/document/d/1OZS0a5FUy3TWehPaIiP6REmNLi5kVJ2S3LGQFOoXbbo/edit</a></p>
+<p>Find all occurrence of anagrams of a given string s in a given string l. Return the list of starting indices.</p>
+<p><strong>Assumptions</strong><br />
+sh is not null or empty.<br />
+lo is not null.</p>
+<p><strong>Examples</strong><br />
+l = &quot;abcbac&quot;, s = &quot;ab&quot;, return [0, 3] since the substring with length 2 starting from index 0/3 are all anagrams of &quot;ab&quot; (&quot;ab&quot;, &quot;ba&quot;).</p>
+<ul>
+<li>AllAnagrams.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/47C2CF26-487B-4ECE-87D1-7A55D359028D/AllAnagrams.java">AllAnagrams.java</a></li>
+</ul>
+</li>
+<li>
+<p>Longest Subarray Contains Only 1s<br />
+Link: <a href="https://docs.google.com/document/d/11yhn7dc3BskHyHzhhGUCAgziMihPx0T37UdBw4N63lo/edit">docs.google.com/document/d/11yhn7dc3BskHyHzhhGUCAgziMihPx0T37UdBw4N63lo/edit</a></p>
+<p>Given an array of integers that contains only 0s and 1s and a positive integer <strong>k</strong>, you can flip at most <strong>k</strong> 0s to 1s, return the longest subarray that contains only integer 1 after flipping.</p>
+<p><strong>Assumptions:</strong></p>
+<ol>
+<li>Length of given array is between [1, 20000].</li>
+<li>The given array only contains 1s and 0s.</li>
+<li>0 &lt;= k &lt;= length of given array.</li>
+</ol>
+<p><strong>Example 1:</strong><br />
+Input: array = [1,1,0,0,1,1,1,0,0,0], k = 2<br />
+Output: 7<br />
+Explanation: flip 0s at index 2 and 3, then the array becomes [1,1,1,1,1,1,1,0,0,0], so that the length of longest subarray that contains only integer 1 is 7.</p>
+<p><strong>Example 2:</strong><br />
+Input: array = [1,1,0,0,1,1,1,0,0,0], k = 0<br />
+Output: 3<br />
+Explanation: k is 0 so you can not flip any 0 to 1, then the length of longest subarray that contains only integer 1 is 3.</p>
+<ul>
+<li>LongestSubarrayContainsOnly1s.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/A1AE84A1-F052-49D6-AE06-29E61E2E8858/LongestSubarrayContainsOnly1s.java">LongestSubarrayContainsOnly1s.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Bit Representation &amp; Operation</h3>
+<ul>
+<li>
+<p>Power of Two<br />
+Link: <a href="https://docs.google.com/document/d/1MUsMMoksfXFYlFGpA1z6eW4I6YNQb2-awKv4uqdkKEE/edit">docs.google.com/document/d/1MUsMMoksfXFYlFGpA1z6eW4I6YNQb2-awKv4uqdkKEE/edit</a></p>
+<p>Determine if a given integer is power of 2.</p>
+<p><strong>Examples</strong><br />
+16 is power of 2 (2 ^ 4)<br />
+3 is not<br />
+0 is not<br />
+-1 is not</p>
+<ul>
+<li>PowerOf2.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/6E0EEA4C-EEA3-4B97-AFE5-F630D50B5B11/PowerOf2.java">PowerOf2.java</a></li>
+</ul>
+</li>
+<li>
+<p>Different Bits<br />
+Link: <a href="https://docs.google.com/document/d/1s7WPZtdLnEfo5KwrBmiwLh5FfJjRzCTktZhhZ72tQNk/edit">docs.google.com/document/d/1s7WPZtdLnEfo5KwrBmiwLh5FfJjRzCTktZhhZ72tQNk/edit</a></p>
+<p>Determine the number of bits that are different for two given integers.</p>
+<p><strong>Examples</strong><br />
+5(“0101”) and 8(“1000”) has 3 different bits</p>
+<ul>
+<li>NumberOfDiffernetBits.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/AEB75D99-BF6C-45FB-BE20-960C04807A35/NumberOfDiffernetBits.java">NumberOfDiffernetBits.java</a></li>
+</ul>
+</li>
+<li>
+<p>All Unique Characters II<br />
+Link: <a href="https://docs.google.com/document/d/1t4WEYo6v_I5XfytVbcp2GJkmAzqVMoO_vp9zwAhpRq0/edit">docs.google.com/document/d/1t4WEYo6v_I5XfytVbcp2GJkmAzqVMoO_vp9zwAhpRq0/edit</a></p>
+<p>Determine if the characters of a given string are all unique.</p>
+<p><strong>Assumptions</strong><br />
+We are using ASCII charset, the value of valid characters are from 0 to 255<br />
+The given string is not null</p>
+<p><strong>Examples</strong><br />
+all the characters in &quot;abA+\8&quot; are unique<br />
+&quot;abA+\a88&quot; contains duplicate characters</p>
+<ul>
+<li>AllUniqueCharactersII.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/9DCF8C39-251D-4BAE-98D8-946AD7DF2C55/AllUniqueCharactersII.java">AllUniqueCharactersII.java</a></li>
+</ul>
+</li>
+<li>
+<p>Reverse Bits<br />
+Link: <a href="https://docs.google.com/document/d/19s2NJ5tYXSuWdWxqxaLgn7hfsA5rim7lxVDQW0tMVdQ/edit">docs.google.com/document/d/19s2NJ5tYXSuWdWxqxaLgn7hfsA5rim7lxVDQW0tMVdQ/edit</a></p>
+<p>Reverse bits of a 32-bit integer. </p>
+<p><strong>Note:</strong> <br />
+In different programming languages, integers might be implemented differently in terms of number of bits, signed, unsigned, etc. However it should not affect your implementation on this problem. In java, the type of input is long, but you just need to work on the last 32-bit and consider it as an unsigned 32-bit integer.</p>
+<p><strong>Example 1:</strong><br />
+Input: 1234 (0b'00000000000000000000010011010010)<br />
+Output: 1260388352 (0b'01001011001000000000000000000000)</p>
+<ul>
+<li>ReverseBitsOf32bitInteger.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/A95150C1-7035-4B78-9A7A-057A18259EE2/ReverseBitsOf32bitInteger.java">ReverseBitsOf32bitInteger.java</a></li>
+</ul>
+</li>
+<li>
+<p>Hexadecimal Representation<br />
+Link: <a href="https://docs.google.com/document/d/1LzmI89oDkQd8ANEs-dg8VWF6XBrMyc73WB_jqsocjcc/edit">docs.google.com/document/d/1LzmI89oDkQd8ANEs-dg8VWF6XBrMyc73WB_jqsocjcc/edit</a></p>
+<p>Generate the hexadecimal representation for a given non-negative integer number as a string. The hex representation should start with &quot;0x&quot;.<br />
+There should not be extra zeros on the left side.</p>
+<p><strong>Examples</strong><br />
+0's hex representation is &quot;0x0&quot;<br />
+255's hex representation is &quot;0xFF&quot;</p>
+<ul>
+<li>HexadecimalRepresentation.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/C7F0F480-36A1-4F67-91F5-FC091567C4CB/HexadecimalRepresentation.java">HexadecimalRepresentation.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Recursion II</h3>
+<ul>
+<li>
+<p>Spiral Order Traverse I<br />
+Link: <a href="https://docs.google.com/document/d/1vzUugK8aMy4NqXj_msLMV3OX-Ve-diVWclxYHKeDQ3E/edit">docs.google.com/document/d/1vzUugK8aMy4NqXj_msLMV3OX-Ve-diVWclxYHKeDQ3E/edit</a></p>
+<p>Traverse an N * N 2D array in spiral order clock-wise starting from the top left corner. Return the list of traversal sequence.</p>
+<p><strong>Assumptions</strong><br />
+The 2D array is not null and has size of N * N where N &gt;= 0</p>
+<p><strong>Examples</strong><br />
+{ {1,  2,  3},<br />
+  {4,  5,  6},<br />
+  {7,  8,  9} }<br />
+the traversal sequence is [1, 2, 3, 6, 9, 8, 7, 4, 5]</p>
+<ul>
+<li>
+<p>SpiralOrderTraverseI(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/88967821-1037-4197-A219-3D6A6E1F6C45/SpiralOrderTraverseI(Iterative).java">SpiralOrderTraverseI(Iterative).java</a></p>
+</li>
+<li>
+<p>SpiralOrderTraverseI(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/FD89BF99-B3E3-4B7E-90B4-A57C6B065FD2/SpiralOrderTraverseI(Recursive).java">SpiralOrderTraverseI(Recursive).java</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>N Queens<br />
+Link: <a href="https://docs.google.com/document/d/1BwjzBiB87XIRXXkAsN34aQEXS-MkzSlmy6BCldHOVmU/edit">docs.google.com/document/d/1BwjzBiB87XIRXXkAsN34aQEXS-MkzSlmy6BCldHOVmU/edit</a></p>
+<p>Get all valid ways of putting N Queens on an N * N chessboard so that no two Queens threaten each other.</p>
+<p><strong>Assumptions</strong><br />
+N &gt; 0</p>
+<p><strong>Return</strong><br />
+A list of ways of putting the N Queens<br />
+Each way is represented by a list of the Queen's y index for x indices of 0 to (N - 1)</p>
+<p><strong>Example</strong><br />
+N = 4, there are two ways of putting 4 queens:<br />
+[1, 3, 0, 2] --&gt; the Queen on the first row is at y index 1, the Queen on the second row is at y index 3, the Queen on the third row is at y index 0 and the Queen on the fourth row is at y index 2.<br />
+[2, 0, 3, 1] --&gt; the Queen on the first row is at y index 2, the Queen on the second row is at y index 0, the Queen on the third row is at y index 3 and the Queen on the fourth row is at y index 1.</p>
+<ul>
+<li>
+<p>NQueensO(1)Validate.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/0714B6C6-0C5A-4B00-8E26-1DB55D809A0C/NQueensO(1)Validate.java">NQueensO(1)Validate.java</a></p>
+</li>
+<li>
+<p>NQueensO(n)Validate.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/E66A6BF6-2D08-4C6D-AC9F-80F71D5FE335/NQueensO(n)Validate.java">NQueensO(n)Validate.java</a></p>
+<ul>
+<li>NQueensO(n)Validate.mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/D5E08B6A-E490-4D65-A9FB-D18D35B0F1E2/NQueensO(n)Validate.mov">NQueensO(n)Validate.mov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Reverse Linked List in Pairs<br />
+Link: <a href="https://docs.google.com/document/d/1rkv4hov2FG3rgjL_nglCKoF_XfliYHG6Ga8PLHjT-t4/edit">docs.google.com/document/d/1rkv4hov2FG3rgjL_nglCKoF_XfliYHG6Ga8PLHjT-t4/edit</a></p>
+<p>Reverse pairs of elements in a singly-linked list.</p>
+<p><strong>Examples</strong><br />
+L = null, after reverse is null<br />
+L = 1 -&gt; null, after reverse is 1 -&gt; null<br />
+L = 1 -&gt; 2 -&gt; null, after reverse is 2 -&gt; 1 -&gt; null<br />
+L = 1 -&gt; 2 -&gt; 3 -&gt; null, after reverse is 2 -&gt; 1 -&gt; 3 -&gt; null</p>
+<ul>
+<li>
+<p>ReverseLinkedListInPairs(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/2C7038BC-CECF-4BCA-AA03-C815F70A97AD/ReverseLinkedListInPairs(Iterative).java">ReverseLinkedListInPairs(Iterative).java</a></p>
+<ul>
+<li>ReverseLinkedListInPairs(Iterative).mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/3C0D0B4F-C017-494F-AA3E-5435A7ABB689/ReverseLinkedListInPairs(Iterative).mov">ReverseLinkedListInPairs(Iterative).mov</a></li>
+</ul>
+</li>
+<li>
+<p>ReverseLinkedListInPairs(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/8182B8F7-3354-4A05-89A2-B94F10EECA52/ReverseLinkedListInPairs(Recursive).java">ReverseLinkedListInPairs(Recursive).java</a></p>
+<ul>
+<li>ReverseLinkedListInPairs(Recursive).mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/86665911-4311-4CB1-A826-2A514E8548F7/ReverseLinkedListInPairs(Recursive).mov">ReverseLinkedListInPairs(Recursive).mov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>String Abbreviation Matching<br />
+Link: <a href="https://docs.google.com/document/d/1h1pIvjaDWuiIjw-qmGYFemBTQaScyUdCFmV6bORnpHg/edit#">docs.google.com/document/d/1h1pIvjaDWuiIjw-qmGYFemBTQaScyUdCFmV6bORnpHg/edit#</a></p>
+<p>Word “book” can be abbreviated to 4, b3, b2k, etc. Given a string and an abbreviation, return if the string matches the abbreviation.</p>
+<p><strong>Assumptions:</strong><br />
+The original string only contains alphabetic characters.<br />
+Both input and pattern are not null.<br />
+Pattern would not contain invalid information like &quot;a0a&quot;,&quot;0&quot;.</p>
+<p><strong>Examples:</strong><br />
+pattern “s11d” matches input “sophisticated” since “11” matches eleven chars “ophisticate”.</p>
+<ul>
+<li>
+<p>StringAbbreviationMatching(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/990EFFB3-E445-4DF5-9CC3-82F07DCA2717/StringAbbreviationMatching(Recursive).java">StringAbbreviationMatching(Recursive).java</a></p>
+</li>
+<li>
+<p>StringAbbreviationMatching(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/A860A7CA-8383-416A-98CF-8A867116DB3C/StringAbbreviationMatching(Iterative).java">StringAbbreviationMatching(Iterative).java</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Store Number of Nodes in Left Subtree<br />
+Link: <a href="https://docs.google.com/document/d/16KR_mmhEpgl4wvDrDaBmrrLHpUxLJ34tUQ34uz0kChw/edit">docs.google.com/document/d/16KR_mmhEpgl4wvDrDaBmrrLHpUxLJ34tUQ34uz0kChw/edit</a></p>
+<p>Given a binary tree, count the number of nodes in each node’s left subtree, and store it in the numNodesLeft field.</p>
+<p><strong>Examples</strong></p>
+<p>                  1(6)<br />
+               /          \<br />
+           2(3)        3(0)<br />
+          /      \<br />
+      4(1)     5(0)<br />
+    /        \        \<br />
+6(0)     7(0)   8(0)<br />
+The numNodesLeft is shown in parentheses.</p>
+<ul>
+<li>
+<p>StoreNumberOfNodesInLeftSubtree.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/21AFC63F-6C17-4FAB-AB46-2212B70E29E7/StoreNumberOfNodesInLeftSubtree.java">StoreNumberOfNodesInLeftSubtree.java</a></p>
+<ul>
+<li>StoreNumOfNodesInLeftSubtree.mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/6D4B2720-D431-4A40-90E7-BA18B0B9717D/StoreNumOfNodesInLeftSubtree.mov">StoreNumOfNodesInLeftSubtree.mov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Lowest Common Ancestor<br />
+Link: <a href="https://docs.google.com/document/d/13o6CzV6Qiz5yr3VUY-mIExEAa7mYig0bL7larkhgyU0/edit">docs.google.com/document/d/13o6CzV6Qiz5yr3VUY-mIExEAa7mYig0bL7larkhgyU0/edit</a></p>
+<p>Given two nodes in a binary tree, find their lowest common ancestor.</p>
+<p><strong>Assumptions</strong><br />
+There is no parent pointer for the nodes in the binary tree<br />
+The given two nodes are guaranteed to be in the binary tree</p>
+<p><strong>Examples</strong><br />
+        5<br />
+      /   \<br />
+     9     12<br />
+   /  \      \<br />
+  2    3      14<br />
+The lowest common ancestor of 2 and 14 is 5<br />
+The lowest common ancestor of 2 and 9 is 9</p>
+<ul>
+<li>
+<p>LowestCommonAncestor.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/FADC80DB-3280-4F69-A785-1E2ECB3787A3/LowestCommonAncestor.java">LowestCommonAncestor.java</a></p>
+</li>
+<li>
+<p>LowestCommonAncestor.mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/E997E72C-5C5B-4BC7-9342-4F1997929C9E/LowestCommonAncestor.mov">LowestCommonAncestor.mov</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Spiral Order Traverse II<br />
+Link: <a href="https://docs.google.com/document/d/17WMvRl-L8SNo3LhAWJKgXBZm9dA9dvnOfZOcUSmi-GQ/edit#heading=h.4wpdyd9qqwv6">docs.google.com/document/d/17WMvRl-L8SNo3LhAWJKgXBZm9dA9dvnOfZOcUSmi-GQ/edit#heading=h.4wpdyd9qqwv6</a></p>
+<p>Traverse an M * N 2D array in spiral order clock-wise starting from the top left corner. Return the list of traversal sequence.</p>
+<p><strong>Assumptions</strong><br />
+The 2D array is not null and has size of M * N where M, N &gt;= 0</p>
+<p><strong>Examples</strong><br />
+{ {1,  2,  3,  4},<br />
+  {5,  6,  7,  8},<br />
+  {9, 10, 11, 12} }<br />
+the traversal sequence is [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]</p>
+<ul>
+<li>SpiralOrderTraverseII.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/94C3BE7F-557D-438F-8522-B16313C3A055/SpiralOrderTraverseII.java">SpiralOrderTraverseII.java</a></li>
+</ul>
+</li>
+<li>
+<p>Reverse Binary Tree Upside Down<br />
+Link: <a href="https://docs.google.com/document/d/1Wk67bWgxRYzaW9fX9yo6Y8dNdk-PFXPXeJSuVmyPoGs/edit">docs.google.com/document/d/1Wk67bWgxRYzaW9fX9yo6Y8dNdk-PFXPXeJSuVmyPoGs/edit</a></p>
+<p>Given a binary tree where all the right nodes are leaf nodes, flip it upside down and turn it into a tree with left leaf nodes as the root.</p>
+<p><strong>Examples</strong><br />
+        1<br />
+      /    \<br />
+    2        5<br />
+  /   \<br />
+3      4<br />
+is reversed to<br />
+        3<br />
+      /    \<br />
+    2        4<br />
+  /   \<br />
+1      5</p>
+<ul>
+<li>
+<p>ReverseBinaryTreeUpsideDown(Iterative).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/DDB3DC74-786A-4BAC-AC4A-94DF00F796BD/ReverseBinaryTreeUpsideDown(Iterative).java">ReverseBinaryTreeUpsideDown(Iterative).java</a></p>
+<ul>
+<li>ReverseBinaryTreeUpsideDown(Iterative).mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/B8C46A75-1C82-4F29-B949-DA5C4FA4DB77/ReverseBinaryTreeUpsideDown(Iterative).mov">ReverseBinaryTreeUpsideDown(Iterative).mov</a></li>
+</ul>
+</li>
+<li>
+<p>ReverseBinaryTreeUpsideDown(Recursive).java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/7C74033C-CED0-4552-AE3D-E8D71DBDF73A/ReverseBinaryTreeUpsideDown(Recursive).java">ReverseBinaryTreeUpsideDown(Recursive).java</a></p>
+<ul>
+<li>ReverseBinaryTreeUpsideDown(Recursive).mov<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/3ACA3368-BCED-4BD7-BD5F-2C4051A71846/ReverseBinaryTreeUpsideDown(Recursive).mov">ReverseBinaryTreeUpsideDown(Recursive).mov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Dynamic Programming I</h3>
+<ul>
+<li>
+<p>Fibonacci Number<br />
+Link: <a href="https://docs.google.com/document/d/1wN_GW57URfJtQR42qyKnDvuoKe7twYySxefQhY-5uQE/edit">docs.google.com/document/d/1wN_GW57URfJtQR42qyKnDvuoKe7twYySxefQhY-5uQE/edit</a></p>
+<p>Get the Kth number in the Fibonacci Sequence. (K is 0-indexed, the 0th Fibonacci number is 0 and the 1st Fibonacci number is 1).<br />
+<strong>Examples</strong><br />
+•    0th fibonacci number is 0<br />
+•    1st fibonacci number is 1<br />
+•    2nd fibonacci number is 1<br />
+•    3rd fibonacci number is 2<br />
+•    6th fibonacci number is 8<br />
+<strong>Corner Cases</strong><br />
+•    What if K &lt; 0? in this case, we should always return 0.<br />
+•    Is it possible the result fibonacci number is overflowed? We can assume it will not be overflowed when we solve this problem on this online judge, but we should also know that it is possible to get an overflowed number, and sometimes we will need to use something like BigInteger.</p>
+<ul>
+<li>FibonacciNumber.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/66FC8D25-4B62-48F3-A096-046EDC2A78EC/FibonacciNumber.java">FibonacciNumber.java</a></li>
+</ul>
+</li>
+<li>
+<p>Longest Ascending SubArray</p>
+<p>Given an unsorted array, find the length of the longest subarray in which the numbers are in ascending order.<br />
+<strong>Assumptions</strong><br />
+•    The given array is not null<br />
+<strong>Examples</strong><br />
+•    {7, 2, 3, 1, 5, 8, 9, 6}, longest ascending subarray is {1, 5, 8, 9}, length is 4.</p>
+<pre><code>  •    {1, 2, 3, 3, 4, 4, 5}, longest ascending subarray is {1, 2, 3}, length is 3.  
+</code></pre>
+<ul>
+<li>LongestAscendingSubArray.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/EC824F48-9658-4AE9-856D-B16C08D5E79B/LongestAscendingSubArray.java">LongestAscendingSubArray.java</a></li>
+</ul>
+</li>
+<li>
+<p>Max Product Of Cutting Rope<br />
+Link: <a href="https://docs.google.com/document/d/1wNLa-iLJDKh_2f2_BOtBI4uW8JZCvTMz2QrNRi0Rd5E/edit">docs.google.com/document/d/1wNLa-iLJDKh_2f2_BOtBI4uW8JZCvTMz2QrNRi0Rd5E/edit</a></p>
+<p>Given a rope with positive integer-length <em>n</em>, how to cut the rope into <em>m</em> integer-length parts with length <em>p</em>[0], <em>p</em><a href="https://docs.google.com/document/d/1v2QDhpxkrOzNtHIEfdZstk3YBqp1Me2CAQa7zmVkEQI/edit">1</a>, ...,<em>p</em>[<em>m</em>-1], in order to get the maximal product of <em>p</em>[0]<em><em>p</em><a href="https://docs.google.com/document/d/1v2QDhpxkrOzNtHIEfdZstk3YBqp1Me2CAQa7zmVkEQI/edit">1</a></em> ... *<em>p</em>[<em>m</em>-1]? <em>m</em> <strong>is determined by you</strong> and must be greater than 0 <strong>(at least one cut must be made</strong>). Return the max product you can have.<br />
+<strong>Assumptions</strong><br />
+•    n &gt;= 2<br />
+<strong>Examples</strong><br />
+•    n = 12, the max product is 3 * 3 * 3 * 3 = 81(cut the rope into 4 pieces with length of each is 3).</p>
+<ul>
+<li>MaxProductOfCuttingRopes.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/AE23F70E-12B2-49F6-9F6E-5A736CC32E6E/MaxProductOfCuttingRopes.java">MaxProductOfCuttingRopes.java</a></li>
+</ul>
+</li>
+<li>
+<p>Array Hopper I<br />
+Link: <a href="https://docs.google.com/document/d/1eXOv-SxPAt2hkbOLpi6cctt0FwhZ0b21w6s-f8aHPpI/edit">docs.google.com/document/d/1eXOv-SxPAt2hkbOLpi6cctt0FwhZ0b21w6s-f8aHPpI/edit</a></p>
+<p>Given an array A of non-negative integers, you are initially positioned at index 0 of the array. <strong>A[i] means the maximum jump distance from that position (you can only jump towards the end of the array).</strong> Determine if you are able to reach the last index.<br />
+<strong>Assumptions</strong><br />
+•    The given array is not null and has length of at least 1.<br />
+<strong>Examples</strong><br />
+•    {1, 3, 2, 0, 3}, we are able to reach the end of array(jump to index 1 then reach the end of the array)</p>
+<pre><code>  •    {2, 1, 1, 0, 2}, we are not able to reach the end of array  
+</code></pre>
+<ul>
+<li>ArrayHopperI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/18B6C26E-C446-4EC0-814C-59C0EF8023C6/ArrayHopperI.java">ArrayHopperI.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Dynamic Programming II</h3>
+<ul>
+<li>
+<p>Array Hopper II<br />
+Link: <a href="https://docs.google.com/document/d/16IS9JPLsCLSFacT-fMutMmE4ubNDBLK86S34IgjqNos/edit">docs.google.com/document/d/16IS9JPLsCLSFacT-fMutMmE4ubNDBLK86S34IgjqNos/edit</a></p>
+<p>Given an array A of non-negative integers, you are initially positioned at index 0 of the array. <strong>A[i] means the maximum jump distance from index i (you can only jump towards the end of the array).</strong> Determine the minimum number of jumps you need to reach the end of array. If you can not reach the end of the array, return -1.<br />
+<strong>Assumptions</strong><br />
+•    The given array is not null and has length of at least 1.<br />
+<strong>Examples</strong><br />
+•    {3, 3, 1, 0, 4}, the minimum jumps needed is 2 (jump to index 1 then to the end of array)</p>
+<pre><code>  •    {2, 1, 1, 0, 2}, you are not able to reach the end of array, return -1 in this case.  
+</code></pre>
+<ul>
+<li>ArrayHopperII.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/A903EDF4-53BD-4070-87A9-111A6788CAC8/ArrayHopperII.java">ArrayHopperII.java</a></li>
+</ul>
+</li>
+<li>
+<p>Largest SubArray Sum<br />
+Link: <a href="https://docs.google.com/document/d/1WAlf0Jo6Bm333Q2odjNxtxH4qgRFMgHObzvZXSFQIIM/edit">docs.google.com/document/d/1WAlf0Jo6Bm333Q2odjNxtxH4qgRFMgHObzvZXSFQIIM/edit</a></p>
+<p>Given an unsorted integer array, find the <strong>subarray</strong> that has the greatest sum. Return the sum.<br />
+<strong>Assumptions</strong><br />
+•    The given array is not null and has length of at least 1.<br />
+<strong>Examples</strong><br />
+•    {2, -1, 4, -2, 1}, the largest subarray sum is 2 + (-1) + 4 = 5</p>
+<pre><code>  •    {-2, -1, -3}, the largest subarray sum is -1  
+</code></pre>
+<ul>
+<li>LargestSubArraySum.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/207C504A-1B7B-4340-809A-51FD927D8E9B/LargestSubArraySum.java">LargestSubArraySum.java</a></li>
+</ul>
+</li>
+<li>
+<p>Dictionary Word I<br />
+Link: <a href="https://docs.google.com/document/d/1ku7T533VliRFYUAxAFXse9o7bpQXiHIPnxKtYaMXVQw/edit">docs.google.com/document/d/1ku7T533VliRFYUAxAFXse9o7bpQXiHIPnxKtYaMXVQw/edit</a></p>
+<p>Given a word and a dictionary, determine if it can be composed by concatenating words from the given dictionary.<br />
+<strong>Assumptions</strong><br />
+•    The given word is not null and is not empty<br />
+•    The given dictionary is not null and is not empty and all the words in the dictionary are not null or empty<br />
+<strong>Examples</strong><br />
+Dictionary: {“bob”, “cat”, “rob”}<br />
+•    Word: “robob” return false</p>
+<pre><code>  •    Word: “robcatbob” return true since it can be composed by &quot;rob&quot;, &quot;cat&quot;, &quot;bob&quot;  
+</code></pre>
+<ul>
+<li>DictionaryWordI.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/7C966A11-AF4B-4789-A7D1-528447B34C8E/DictionaryWordI.java">DictionaryWordI.java</a></li>
+</ul>
+</li>
+<li>
+<p>Edit Distance<br />
+Link: <a href="https://docs.google.com/document/d/1YnX2sm9A-RF25tjOo4JuPYUJGxm6gLavdp1mGkghGuk/edit">docs.google.com/document/d/1YnX2sm9A-RF25tjOo4JuPYUJGxm6gLavdp1mGkghGuk/edit</a></p>
+<p>Given two strings of alphanumeric characters, determine the minimum number of <strong>Replace</strong>, <strong>Delete</strong>, and <strong>Insert</strong> operations needed to transform one string into the other.<br />
+<strong>Assumptions</strong><br />
+•    Both strings are not null<br />
+<strong>Examples</strong><br />
+string one: “sigh”, string two : “asith”<br />
+the edit distance between one and two is 2 (one insert “a” at front then replace “g” with “t”).</p>
+<ul>
+<li>EditDistance.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/58EF060B-5E7F-4272-BFF2-148DDFF151AC/EditDistance.java">EditDistance.java</a></li>
+</ul>
+</li>
+<li>
+<p>Largest Square Of 1s<br />
+Link: <a href="https://docs.google.com/document/d/1PmjGFdRxQasK90lcaP1RU6GIGGQd2Um3MoIE-NvZpKw/edit">docs.google.com/document/d/1PmjGFdRxQasK90lcaP1RU6GIGGQd2Um3MoIE-NvZpKw/edit</a></p>
+<p>Determine the largest square of 1s in a binary matrix (a binary matrix only contains 0 and 1), return the length of the largest square.<br />
+<strong>Assumptions</strong><br />
+•    The given matrix is not null and guaranteed to be of size N * N, N &gt;= 0<br />
+<strong>Examples</strong><br />
+{ {0, 0, 0, 0},<br />
+  {1, <strong>1, 1,</strong> 1},<br />
+  {0, <strong>1, 1,</strong> 1},<br />
+  {1, 0, 1, 1}}<br />
+the largest square of 1s has length of 2</p>
+<ul>
+<li>LargestSquareOf1s.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/0EF6FAC1-75BE-4D37-95DD-8891DAEC3E20/LargestSquareOf1s.java">LargestSquareOf1s.java</a></li>
+</ul>
+</li>
+</ul>
+<h3>Dynamic Programming III</h3>
+<ul>
+<li>
+<p>Longest Consecutive 1s<br />
+Link: <a href="https://docs.google.com/spreadsheets/d/1DxUnGdTDhr3IOCP5-D2d5GXLuRVfeRG8BvF9xbHXNgo/edit#gid=0">docs.google.com/spreadsheets/d/1DxUnGdTDhr3IOCP5-D2d5GXLuRVfeRG8BvF9xbHXNgo/edit#gid=0</a></p>
+<p>Given an array containing only 0s and 1s, find the length of the longest subarray of consecutive 1s.<br />
+<strong>Assumptions</strong><br />
+•    The given array is not null<br />
+<strong>Examples</strong><br />
+•    {0, 1, 0, 1, 1, 1, 0}, the longest consecutive 1s is 3.</p>
+<ul>
+<li>LongestConsecutive1s.java<br />
+Attachment: <a href="V1.0-7314c1ac615c86b08296bcb7843f29e6-assets/CE59FEF3-BB1F-4565-9C72-9E04116B4660/LongestConsecutive1s.java">LongestConsecutive1s.java</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+</body>
+</html>
